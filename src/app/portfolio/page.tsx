@@ -5,6 +5,7 @@ import { useSearchParams } from 'next/navigation';
 import GalleryGrid from '@/components/GalleryGrid';
 import TripFilter from '@/components/TripFilter';
 import { photos, trips } from '@/data/generatedPhotos';
+import { Photo } from '@/types';
 
 export default function PortfolioPage() {
   const searchParams = useSearchParams();
@@ -19,8 +20,8 @@ export default function PortfolioPage() {
   }, [searchParams]);
 
   // Filter photos by trip
-  const filteredPhotos = activeTrip
-    ? photos.filter(photo => photo.trip === activeTrip)
+  const filteredPhotos: Photo[] = activeTrip
+    ? photos.filter((photo) => photo.trip === activeTrip)
     : photos;
 
   return (
