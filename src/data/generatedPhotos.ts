@@ -1,10 +1,12 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-04-01T21:09:09.916Z
+// Generated on: 2026-04-01T21:17:19.178Z
 // Run 'bash scripts/update-photos.sh' to regenerate
+
+import { Trip, Photo } from '@/types';
 
 export const S3_BASE_URL = 'https://jeremyjpangphotos.s3.us-east-2.amazonaws.com';
 
-export const heroImages = [
+export const heroImages: string[] = [
   "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/hero/DSCF0035.jpeg",
   "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/hero/DSCF0706.jpeg",
   "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/hero/DSCF3458.jpeg",
@@ -17,7 +19,7 @@ export const heroImages = [
   "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/hero/DSCF9376.jpeg"
 ];
 
-export const trips = [
+export const trips: Trip[] = [
   {
     "id": "china-2023",
     "slug": "china-2023",
@@ -65,4 +67,4 @@ export const trips = [
   }
 ];
 
-export const photos = [];
+export const photos: Photo[] = [];

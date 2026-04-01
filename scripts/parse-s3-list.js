@@ -140,13 +140,15 @@ function generateData(files) {
 // Generated on: ${new Date().toISOString()}
 // Run 'bash scripts/update-photos.sh' to regenerate
 
+import { Trip, Photo } from '@/types';
+
 export const S3_BASE_URL = '${S3_BASE_URL}';
 
-export const heroImages = ${JSON.stringify(heroImages, null, 2)};
+export const heroImages: string[] = ${JSON.stringify(heroImages, null, 2)};
 
-export const trips = ${JSON.stringify(trips, null, 2)};
+export const trips: Trip[] = ${JSON.stringify(trips, null, 2)};
 
-export const photos = ${JSON.stringify(allPhotos, null, 2)};
+export const photos: Photo[] = ${JSON.stringify(allPhotos, null, 2)};
 `;
 
   const outputPath = path.join(__dirname, '../src/data/generatedPhotos.ts');
