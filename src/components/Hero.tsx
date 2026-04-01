@@ -1,45 +1,55 @@
+'use client';
+
 import Image from 'next/image';
-import Link from 'next/link';
-import { siteSettings } from '@/data/siteData';
+import { useState, useEffect } from 'react';
+import { heroImages } from '@/data/generatedPhotos';
 
 export default function Hero() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [shuffledImages, setShuffledImages] = useState<string[]>([]);
+
+  // Shuffle images on mount
+  useEffect(() => {
+    const shuffled = [...heroImages].sort(() => Math.random() - 0.5);
+    setShuffledImages(shuffled);
+  }, []);
+
+  // Rotate images every 7 seconds
+  useEffect(() => {
+    if (shuffledImages.length === 0) return;
+
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % shuffledImages.length);
+    }, 7000);
+
+    return () => clearInterval(interval);
+  }, [shuffledImages]);
+
+  if (shuffledImages.length === 0) return null;
+
   return (
-    <section className="relative h-screen flex items-center justify-center">
-      {/* Hero Image - REPLACE with your hero image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/hero/hero-main.jpg"
-          alt="Hero image"
-          fill
-          className="object-cover"
-          priority
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-black/30" />
-      </div>
-
-      {/* Hero Content */}
-      <div className="relative z-10 text-center text-white px-6 max-w-4xl">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif mb-6">
-          {siteSettings.photographerName}
-        </h1>
-        <p className="text-xl md:text-2xl mb-10 text-white/90">
-          {siteSettings.tagline}
-        </p>
-        <Link
-          href="/portfolio"
-          className="inline-block px-8 py-4 bg-white text-neutral-900 hover:bg-white/90 transition-smooth text-lg font-medium"
+    <section className="relative h-screen overflow-hidden bg-white">
+      {/* Hero Images Slideshow */}
+      {shuffledImages.map((image, index) => (
+        <div
+          key={image}
+          className={`absolute inset-0 p-8 md:p-16 lg:p-24 flex items-center justify-center transition-opacity duration-1000 ${
+            index === currentIndex ? 'opacity-100' : 'opacity-0'
+          }`}
         >
-          View Portfolio
-        </Link>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10">
-        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-bounce" />
+          <div className="relative w-full h-full">
+            <Image
+              src={image}
+              alt="Photography"
+              fill
+              className="object-contain animate-ken-burns"
+              priority={index === 0}
+              sizes="100vw"
+            />
+          </div>
         </div>
-      </div>
+      ))}
+
     </section>
   );
 }

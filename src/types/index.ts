@@ -3,10 +3,11 @@ export interface Photo {
   src: string;
   alt: string;
   title?: string;
-  category: string;
-  width: number;
-  height: number;
+  trip: string;
+  width?: number;
+  height?: number;
   featured?: boolean;
+  filename?: string;
 }
 
 export interface Project {
@@ -27,6 +28,16 @@ export interface Category {
   slug: string;
   description: string;
   count: number;
+}
+
+export interface Trip {
+  id: string;
+  slug: string;
+  name: string;
+  year: string;
+  description: string;
+  count: number;
+  coverImage: string;
 }
 
 export interface SiteSettings {

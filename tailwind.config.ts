@@ -36,6 +36,15 @@ const config: Config = {
         '3/2': '3 / 2',
         '16/9': '16 / 9',
       },
+      keyframes: {
+        'ken-burns': {
+          '0%': { transform: 'scale(1)' },
+          '100%': { transform: 'scale(1.1)' },
+        },
+      },
+      animation: {
+        'ken-burns': 'ken-burns 20s ease-out infinite alternate',
+      },
     },
   },
   plugins: [],

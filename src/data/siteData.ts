@@ -47,13 +47,26 @@ export const categories: Category[] = [
   },
 ];
 
-// REPLACE: Add your actual photos
-// Place images in /public/images/gallery/ folder
+// REPLACE: Update with your S3 bucket URL
+// After creating your S3 bucket, replace YOUR-BUCKET-NAME below
+const S3_BASE_URL = 'https://jeremyjpangphotos.s3.us-east-2.amazonaws.com';
+// OR use CloudFront: 'https://YOUR-CLOUDFRONT-ID.cloudfront.net'
+
+// REPLACE: Add your hero images (they will rotate randomly)
+export const heroImages = [
+  `${S3_BASE_URL}/hero/hero-1.jpg`,
+  `${S3_BASE_URL}/hero/hero-2.jpg`,
+  `${S3_BASE_URL}/hero/hero-3.jpg`,
+  `${S3_BASE_URL}/hero/hero-4.jpg`,
+  `${S3_BASE_URL}/hero/hero-5.jpg`,
+  // Add more hero images as you upload them
+];
+
 export const photos: Photo[] = [
   // Street
   {
     id: 'street-1',
-    src: '/images/gallery/street-1.jpg',
+    src: `${S3_BASE_URL}/gallery/street-1.jpg`,
     alt: 'City street scene',
     title: 'Urban Rhythm',
     category: 'street',
@@ -63,7 +76,7 @@ export const photos: Photo[] = [
   },
   {
     id: 'street-2',
-    src: '/images/gallery/street-2.jpg',
+    src: `${S3_BASE_URL}/gallery/street-2.jpg`,
     alt: 'Person walking in rain',
     title: 'Rainy Days',
     category: 'street',
@@ -72,7 +85,7 @@ export const photos: Photo[] = [
   },
   {
     id: 'street-3',
-    src: '/images/gallery/street-3.jpg',
+    src: `${S3_BASE_URL}/gallery/street-3.jpg`,
     alt: 'Market scene',
     title: 'Market Life',
     category: 'street',
@@ -83,7 +96,7 @@ export const photos: Photo[] = [
   // Travel
   {
     id: 'travel-1',
-    src: '/images/gallery/travel-1.jpg',
+    src: `${S3_BASE_URL}/gallery/travel-1.jpg`,
     alt: 'Mountain landscape',
     title: 'Alpine Morning',
     category: 'travel',
@@ -93,7 +106,7 @@ export const photos: Photo[] = [
   },
   {
     id: 'travel-2',
-    src: '/images/gallery/travel-2.jpg',
+    src: `${S3_BASE_URL}/gallery/travel-2.jpg`,
     alt: 'Temple architecture',
     title: 'Sacred Spaces',
     category: 'travel',
@@ -102,7 +115,7 @@ export const photos: Photo[] = [
   },
   {
     id: 'travel-3',
-    src: '/images/gallery/travel-3.jpg',
+    src: `${S3_BASE_URL}/gallery/travel-3.jpg`,
     alt: 'Coastal scene',
     title: 'Ocean Views',
     category: 'travel',
@@ -113,7 +126,7 @@ export const photos: Photo[] = [
   // Landscape
   {
     id: 'landscape-1',
-    src: '/images/gallery/landscape-1.jpg',
+    src: `${S3_BASE_URL}/gallery/landscape-1.jpg`,
     alt: 'Mountain peaks at sunset',
     title: 'Golden Hour',
     category: 'landscape',
@@ -123,7 +136,7 @@ export const photos: Photo[] = [
   },
   {
     id: 'landscape-2',
-    src: '/images/gallery/landscape-2.jpg',
+    src: `${S3_BASE_URL}/gallery/landscape-2.jpg`,
     alt: 'Forest path',
     title: 'Into the Woods',
     category: 'landscape',
@@ -134,7 +147,7 @@ export const photos: Photo[] = [
   // Architecture
   {
     id: 'architecture-1',
-    src: '/images/gallery/architecture-1.jpg',
+    src: `${S3_BASE_URL}/gallery/architecture-1.jpg`,
     alt: 'Modern building',
     title: 'Lines and Curves',
     category: 'architecture',
@@ -143,7 +156,7 @@ export const photos: Photo[] = [
   },
   {
     id: 'architecture-2',
-    src: '/images/gallery/architecture-2.jpg',
+    src: `${S3_BASE_URL}/gallery/architecture-2.jpg`,
     alt: 'Historic structure',
     title: 'Timeless Design',
     category: 'architecture',
@@ -212,7 +225,7 @@ export const aboutContent: AboutContent = {
 
   philosophy: ``,
 
-  portraitImage: '/images/about/portrait.jpg',
+  portraitImage: `${S3_BASE_URL}/about/portrait.jpg`,
 
   gear: [],
 };
