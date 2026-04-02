@@ -6,13 +6,10 @@ import { heroImages } from '@/data/generatedPhotos';
 
 export default function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [shuffledImages, setShuffledImages] = useState<string[]>([]);
-
-  // Shuffle images on mount
-  useEffect(() => {
-    const shuffled = [...heroImages].sort(() => Math.random() - 0.5);
-    setShuffledImages(shuffled);
-  }, []);
+  // Initialize with shuffled images immediately
+  const [shuffledImages] = useState<string[]>(() => {
+    return [...heroImages].sort(() => Math.random() - 0.5);
+  });
 
   // Rotate images every 7 seconds
   useEffect(() => {
