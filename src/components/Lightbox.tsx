@@ -73,27 +73,27 @@ export default function Lightbox({ photos, currentIndex, onClose, onNavigate }: 
 
       {/* Image */}
       <div className="relative w-full h-full flex items-center justify-center p-12 md:p-20">
-        <div className="relative max-w-7xl max-h-full w-full">
+        <div className="relative w-full h-full">
           <Image
             src={currentPhoto.src}
             alt={currentPhoto.alt}
-            width={currentPhoto.width}
-            height={currentPhoto.height}
-            className="w-full h-auto max-h-[80vh] object-contain"
+            fill
+            className="object-contain"
             priority
+            sizes="100vw"
           />
         </div>
       </div>
 
       {/* Image Info */}
-      {currentPhoto.title && (
-        <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center">
-          <p className="text-white text-lg font-serif">{currentPhoto.title}</p>
-          <p className="text-white/60 text-sm mt-1">
-            {currentIndex + 1} / {photos.length}
-          </p>
-        </div>
-      )}
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center">
+        {currentPhoto.title && (
+          <p className="text-white text-lg font-serif mb-1">{currentPhoto.title}</p>
+        )}
+        <p className="text-white/60 text-sm">
+          {currentIndex + 1} / {photos.length}
+        </p>
+      </div>
     </div>
   );
 }
