@@ -22,13 +22,13 @@ export default function AboutPage() {
         {/* Portrait & Bio Grid */}
         <div className="grid md:grid-cols-2 gap-12 mb-24">
           {/* Portrait Image */}
-          <div className="relative aspect-[3/4] bg-neutral-200">
+          <div className="relative aspect-[3/4] bg-neutral-200 w-full max-w-sm mx-auto md:mx-0">
             <Image
               src={aboutContent.portraitImage}
               alt={siteSettings.photographerName}
               fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-contain"
+              sizes="(max-width: 768px) 90vw, 50vw"
             />
           </div>
 
@@ -36,9 +36,14 @@ export default function AboutPage() {
           <div className="flex flex-col justify-center">
             <h2 className="text-3xl font-serif mb-6">Hello, I'm {siteSettings.photographerName}</h2>
             <div className="prose prose-neutral max-w-none">
-              <p className="text-neutral-700 leading-relaxed text-lg">
+              <p className="text-neutral-700 leading-relaxed text-lg whitespace-pre-line">
                 {aboutContent.bio}
               </p>
+              {aboutContent.philosophy && (
+                <p className="text-neutral-600 leading-relaxed text-lg italic mt-6">
+                  {aboutContent.philosophy}
+                </p>
+              )}
             </div>
           </div>
         </div>
