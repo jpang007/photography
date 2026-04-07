@@ -1,5 +1,5 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-04-07T22:43:37.969Z
+// Generated on: 2026-04-07T22:48:02.570Z
 // Run 'bash scripts/update-photos.sh' to regenerate
 
 import { Trip, Photo } from '@/types';
@@ -26,8 +26,8 @@ export const trips: Trip[] = [
     "name": "China",
     "year": "2023",
     "description": "Exploring the ancient and modern landscapes of China",
-    "count": 1,
-    "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2023/DSCF3579.jpeg"
+    "count": 3,
+    "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2023/DSCF3439.jpeg"
   },
   {
     "id": "japan-2023",
@@ -68,6 +68,20 @@ export const trips: Trip[] = [
 ];
 
 export const photos: Photo[] = [
+  {
+    "id": "china-2023-dscf3439",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2023/DSCF3439.jpeg",
+    "alt": "DSCF3439",
+    "trip": "china-2023",
+    "filename": "DSCF3439.jpeg"
+  },
+  {
+    "id": "china-2023-dscf3558",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2023/DSCF3558.jpeg",
+    "alt": "DSCF3558",
+    "trip": "china-2023",
+    "filename": "DSCF3558.jpeg"
+  },
   {
     "id": "china-2023-dscf3579",
     "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2023/DSCF3579.jpeg",
