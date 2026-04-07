@@ -1,5 +1,5 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-04-06T15:34:40.970Z
+// Generated on: 2026-04-07T01:11:05.317Z
 // Run 'bash scripts/update-photos.sh' to regenerate
 
 import { Trip, Photo } from '@/types';
@@ -62,8 +62,8 @@ export const trips: Trip[] = [
     "name": "Moments",
     "year": "",
     "description": "Random captures and everyday moments",
-    "count": 0,
-    "coverImage": ""
+    "count": 1,
+    "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/DSCF4179.jpeg"
   }
 ];
 
@@ -81,5 +81,12 @@ export const photos: Photo[] = [
     "alt": "DSCF2646",
     "trip": "japan-2023",
     "filename": "DSCF2646.jpeg"
+  },
+  {
+    "id": "random-dscf4179",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/DSCF4179.jpeg",
+    "alt": "DSCF4179",
+    "trip": "random",
+    "filename": "DSCF4179.jpeg"
   }
 ];
