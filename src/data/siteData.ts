@@ -51,7 +51,11 @@ const S3_BASE_URL = 'https://jeremyjpangphotos.s3.us-east-2.amazonaws.com';
 
 // REPLACE: Update your about content
 export const aboutContent: AboutContent = {
-  bio: `I'm based in Seattle and enjoy taking photos for fun. Photography is my creative outlet and a way to explore the world around me.`,
+  bio: `I grew up in Southern California and studied computer science at the University of California, Riverside. Since 2020, I've been interested in photography and have been taking amateur photos for pleasure. Currently based in Seattle, I enjoy exploring the world through my lens.
+
+When I'm not behind the camera, I'm studying French and Spanish, and practicing jiu jitsu.
+
+*Vivre l'instant présent.*`,
 
   philosophy: ``,
 
