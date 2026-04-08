@@ -22,12 +22,12 @@ export default function AboutPage() {
         {/* Portrait & Bio Grid */}
         <div className="grid md:grid-cols-2 gap-12 mb-24">
           {/* Portrait Image */}
-          <div className="relative aspect-[3/4] bg-neutral-200 w-full max-w-sm mx-auto md:mx-0">
+          <div className="relative aspect-square w-full max-w-sm mx-auto md:mx-0 border-4 border-neutral-200">
             <Image
               src={aboutContent.portraitImage}
               alt={siteSettings.photographerName}
               fill
-              className="object-contain"
+              className="object-cover"
               sizes="(max-width: 768px) 90vw, 50vw"
             />
           </div>
