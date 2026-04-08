@@ -1,5 +1,5 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-04-07T22:51:26.544Z
+// Generated on: 2026-04-08T03:24:32.113Z
 // Run 'bash scripts/update-photos.sh' to regenerate
 
 import { Trip, Photo } from '@/types';
@@ -44,8 +44,8 @@ export const trips: Trip[] = [
     "name": "New Zealand",
     "year": "2024",
     "description": "Adventures across the breathtaking landscapes of New Zealand",
-    "count": 0,
-    "coverImage": ""
+    "count": 2,
+    "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/newzealand-2024/DSCF4271.jpeg"
   },
   {
     "id": "vancouver-2024",
@@ -109,6 +109,20 @@ export const photos: Photo[] = [
     "alt": "DSCF2646",
     "trip": "japan-2023",
     "filename": "DSCF2646.jpeg"
+  },
+  {
+    "id": "newzealand-2024-dscf4271",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/newzealand-2024/DSCF4271.jpeg",
+    "alt": "DSCF4271",
+    "trip": "newzealand-2024",
+    "filename": "DSCF4271.jpeg"
+  },
+  {
+    "id": "newzealand-2024-img-1357",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/newzealand-2024/IMG_1357.jpeg",
+    "alt": "IMG 1357",
+    "trip": "newzealand-2024",
+    "filename": "IMG_1357.jpeg"
   },
   {
     "id": "random-dscf4179",
