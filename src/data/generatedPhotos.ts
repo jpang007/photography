@@ -56,6 +56,24 @@ export const trips: Trip[] = [
     "coverImage": ""
   },
   {
+    "id": "china-2025",
+    "slug": "china-2025",
+    "name": "China",
+    "year": "2025",
+    "description": "Exploring the ancient and modern landscapes of China",
+    "count": 0,
+    "coverImage": ""
+  },
+  {
+    "id": "italy-2025",
+    "slug": "italy-2025",
+    "name": "Italy",
+    "year": "2025",
+    "description": "Discovering art, culture, and cuisine in Italy",
+    "count": 0,
+    "coverImage": ""
+  },
+  {
     "id": "random",
     "slug": "random",
     "name": "Moments",

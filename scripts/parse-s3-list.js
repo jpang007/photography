@@ -35,6 +35,16 @@ const TRIP_METADATA = {
     year: '2024',
     description: 'Urban exploration in beautiful Vancouver',
   },
+  'china-2025': {
+    name: 'China',
+    year: '2025',
+    description: 'Exploring the ancient and modern landscapes of China',
+  },
+  'italy-2025': {
+    name: 'Italy',
+    year: '2025',
+    description: 'Discovering art, culture, and cuisine in Italy',
+  },
   'random': {
     name: 'Moments',
     year: '',
