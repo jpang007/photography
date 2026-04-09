@@ -6,9 +6,9 @@ export const siteSettings: SiteSettings = {
   photographerName: 'Jeremy Pang',
   tagline: 'Visual Stories Through Light',
   description: 'Amateur photography from Seattle',
-  email: 'hello@yourphotography.com',
+  email: 'jeremyjpang@gmail.com',
   social: {
-    instagram: 'https://instagram.com/yourhandle',
+    // instagram: 'https://instagram.com/yourhandle',
     // twitter: 'https://twitter.com/yourhandle',
     // facebook: 'https://facebook.com/yourpage',
     // linkedin: 'https://linkedin.com/in/yourprofile',

@@ -42,36 +42,20 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Social */}
+          {/* Contact */}
           <div>
             <h4 className="text-white text-sm font-medium mb-4 tracking-wide">
               Connect
             </h4>
             <ul className="space-y-3">
-              {siteSettings.social.instagram && (
-                <li>
-                  <a
-                    href={siteSettings.social.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm hover:text-white transition-smooth"
-                  >
-                    Instagram
-                  </a>
-                </li>
-              )}
-              {siteSettings.social.twitter && (
-                <li>
-                  <a
-                    href={siteSettings.social.twitter}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm hover:text-white transition-smooth"
-                  >
-                    Twitter
-                  </a>
-                </li>
-              )}
+              <li>
+                <a
+                  href={`mailto:${siteSettings.email}`}
+                  className="text-sm hover:text-white transition-smooth"
+                >
+                  {siteSettings.email}
+                </a>
+              </li>
             </ul>
           </div>
         </div>
