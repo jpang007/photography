@@ -1,42 +1,25 @@
 import Hero from "@/components/Hero";
-import GalleryGrid from "@/components/GalleryGrid";
-import { photos, trips } from "@/data/generatedPhotos";
+import { trips } from "@/data/generatedPhotos";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
-  // Get featured photos for homepage (first 6 photos)
-  const featuredPhotos = photos.slice(0, 6);
-
   return (
     <>
       {/* Hero Section */}
       <Hero />
 
-      {/* Featured Work */}
-      {featuredPhotos.length > 0 && (
-        <section className="py-24 px-6 md:px-12 lg:px-24">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl mb-4">Featured Work</h2>
-              <p className="text-neutral-600 text-lg max-w-2xl mx-auto">
-                A curated selection of recent captures
-              </p>
-            </div>
-
-            <GalleryGrid photos={featuredPhotos} />
-
-            <div className="text-center mt-16">
-              <Link
-                href="/portfolio"
-                className="inline-block px-8 py-4 bg-neutral-900 text-white hover:bg-neutral-800 transition-smooth"
-              >
-                View Full Portfolio
-              </Link>
-            </div>
-          </div>
-        </section>
-      )}
+      {/* Portfolio Button */}
+      <section className="py-24 px-6 md:px-12 lg:px-24">
+        <div className="max-w-7xl mx-auto text-center">
+          <Link
+            href="/portfolio"
+            className="inline-block px-8 py-4 bg-neutral-900 text-white hover:bg-neutral-800 transition-smooth"
+          >
+            View Full Portfolio
+          </Link>
+        </div>
+      </section>
 
       {/* Trips Preview */}
       {trips.length > 0 && (
