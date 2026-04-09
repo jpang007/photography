@@ -1,5 +1,5 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-04-09T01:23:20.748Z
+// Generated on: 2026-04-09T01:25:48.520Z
 // Run 'bash scripts/update-photos.sh' to regenerate
 
 import { Trip, Photo } from '@/types';
@@ -15,7 +15,6 @@ export const heroImages: string[] = [
   "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/hero/DSCF4707.jpeg",
   "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/hero/DSCF4766.jpeg",
   "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/hero/DSCF4767.jpeg",
-  "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/hero/DSCF6768.jpeg",
   "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/hero/DSCF9376.jpeg"
 ];
 
