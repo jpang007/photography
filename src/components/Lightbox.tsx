@@ -43,11 +43,11 @@ export default function Lightbox({ photos, currentIndex, onClose, onNavigate }: 
   };
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center">
+    <div className="fixed inset-0 z-50 bg-white flex items-center justify-center">
       {/* Close Button */}
       <button
         onClick={onClose}
-        className="absolute top-6 right-6 text-white/70 hover:text-white text-4xl leading-none z-10"
+        className="absolute top-6 right-6 text-neutral-400 hover:text-neutral-900 text-4xl leading-none z-10"
         aria-label="Close lightbox"
       >
         ×
@@ -56,7 +56,7 @@ export default function Lightbox({ photos, currentIndex, onClose, onNavigate }: 
       {/* Previous Button */}
       <button
         onClick={handlePrevious}
-        className="absolute left-6 text-white/70 hover:text-white text-5xl z-10"
+        className="absolute left-6 text-neutral-400 hover:text-neutral-900 text-5xl z-10"
         aria-label="Previous image"
       >
         ‹
@@ -65,7 +65,7 @@ export default function Lightbox({ photos, currentIndex, onClose, onNavigate }: 
       {/* Next Button */}
       <button
         onClick={handleNext}
-        className="absolute right-6 text-white/70 hover:text-white text-5xl z-10"
+        className="absolute right-6 text-neutral-400 hover:text-neutral-900 text-5xl z-10"
         aria-label="Next image"
       >
         ›
@@ -88,9 +88,9 @@ export default function Lightbox({ photos, currentIndex, onClose, onNavigate }: 
       {/* Image Info */}
       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center">
         {currentPhoto.title && (
-          <p className="text-white text-lg font-serif mb-1">{currentPhoto.title}</p>
+          <p className="text-neutral-900 text-lg font-serif mb-1">{currentPhoto.title}</p>
         )}
-        <p className="text-white/60 text-sm">
+        <p className="text-neutral-500 text-sm">
           {currentIndex + 1} / {photos.length}
         </p>
       </div>
