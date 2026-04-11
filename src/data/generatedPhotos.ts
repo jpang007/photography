@@ -1,5 +1,5 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-04-09T01:28:33.976Z
+// Generated on: 2026-04-11T22:44:13.478Z
 // Run 'bash scripts/update-photos.sh' to regenerate
 
 import { Trip, Photo } from '@/types';
@@ -70,8 +70,8 @@ export const trips: Trip[] = [
     "name": "Italy",
     "year": "2025",
     "description": "Discovering art, culture, and cuisine in Italy",
-    "count": 0,
-    "coverImage": ""
+    "count": 7,
+    "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/italy-2025/454C24CE-7AAB-4F8E-9191-37FEC14FD898-58951-00001551ED9ADF18.jpeg"
   },
   {
     "id": "random",
@@ -112,6 +112,55 @@ export const photos: Photo[] = [
     "alt": "DSCF3579",
     "trip": "china-2023",
     "filename": "DSCF3579.jpeg"
+  },
+  {
+    "id": "italy-2025-454c24ce-7aab-4f8e-9191-37fec14fd898-58951-00001551ed9adf18",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/italy-2025/454C24CE-7AAB-4F8E-9191-37FEC14FD898-58951-00001551ED9ADF18.jpeg",
+    "alt": "454C24CE 7AAB 4F8E 9191 37FEC14FD898 58951 00001551ED9ADF18",
+    "trip": "italy-2025",
+    "filename": "454C24CE-7AAB-4F8E-9191-37FEC14FD898-58951-00001551ED9ADF18.jpeg"
+  },
+  {
+    "id": "italy-2025-d3e4f27c-e816-45dc-887e-24a1d4a71431-49770-0000105c5220b42f",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/italy-2025/D3E4F27C-E816-45DC-887E-24A1D4A71431-49770-0000105C5220B42F.jpeg",
+    "alt": "D3E4F27C E816 45DC 887E 24A1D4A71431 49770 0000105C5220B42F",
+    "trip": "italy-2025",
+    "filename": "D3E4F27C-E816-45DC-887E-24A1D4A71431-49770-0000105C5220B42F.jpeg"
+  },
+  {
+    "id": "italy-2025-dscf7083",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/italy-2025/DSCF7083.jpeg",
+    "alt": "DSCF7083",
+    "trip": "italy-2025",
+    "filename": "DSCF7083.jpeg"
+  },
+  {
+    "id": "italy-2025-dscf7111",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/italy-2025/DSCF7111.jpeg",
+    "alt": "DSCF7111",
+    "trip": "italy-2025",
+    "filename": "DSCF7111.jpeg"
+  },
+  {
+    "id": "italy-2025-dscf7473",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/italy-2025/DSCF7473.jpeg",
+    "alt": "DSCF7473",
+    "trip": "italy-2025",
+    "filename": "DSCF7473.jpeg"
+  },
+  {
+    "id": "italy-2025-dscf7960--1-",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/italy-2025/DSCF7960 (1).jpeg",
+    "alt": "DSCF7960 (1)",
+    "trip": "italy-2025",
+    "filename": "DSCF7960 (1).jpeg"
+  },
+  {
+    "id": "italy-2025-snapseed-2",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/italy-2025/Snapseed 2.jpeg",
+    "alt": "Snapseed 2",
+    "trip": "italy-2025",
+    "filename": "Snapseed 2.jpeg"
   },
   {
     "id": "japan-2023-dscf2435",
