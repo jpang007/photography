@@ -1,5 +1,5 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-04-18T03:24:16.774Z
+// Generated on: 2026-04-18T15:09:38.597Z
 // Run 'bash scripts/update-photos.sh' to regenerate
 
 import { Trip, Photo } from '@/types';
@@ -191,18 +191,18 @@ export const photos: Photo[] = [
     "filename": "DSCF4271.jpeg"
   },
   {
-    "id": "newzealand-2024-dscf4452",
-    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/newzealand-2024/DSCF4452.jpeg",
-    "alt": "DSCF4452",
-    "trip": "newzealand-2024",
-    "filename": "DSCF4452.jpeg"
-  },
-  {
     "id": "newzealand-2024-img-1371",
     "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/newzealand-2024/IMG_1371.jpeg",
     "alt": "IMG 1371",
     "trip": "newzealand-2024",
     "filename": "IMG_1371.jpeg"
+  },
+  {
+    "id": "newzealand-2024-img-1451-snapseedcopy",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/newzealand-2024/IMG_1451_SnapseedCopy.jpeg",
+    "alt": "IMG 1451 SnapseedCopy",
+    "trip": "newzealand-2024",
+    "filename": "IMG_1451_SnapseedCopy.jpeg"
   },
   {
     "id": "random-dscf0119",
