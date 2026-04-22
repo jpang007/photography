@@ -1,5 +1,5 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-04-21T01:15:51.283Z
+// Generated on: 2026-04-22T01:42:34.410Z
 // Run 'bash scripts/update-photos.sh' to regenerate
 
 import { Trip, Photo } from '@/types';
@@ -79,7 +79,7 @@ export const trips: Trip[] = [
     "name": "Moments",
     "year": "",
     "description": "Random captures and everyday moments",
-    "count": 4,
+    "count": 9,
     "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/DSCF0119.jpeg"
   }
 ];
@@ -231,5 +231,40 @@ export const photos: Photo[] = [
     "alt": "DSCF8957",
     "trip": "random",
     "filename": "DSCF8957.jpeg"
+  },
+  {
+    "id": "random-img-1497",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/IMG_1497.jpeg",
+    "alt": "IMG 1497",
+    "trip": "random",
+    "filename": "IMG_1497.jpeg"
+  },
+  {
+    "id": "random-img-1501",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/IMG_1501.jpeg",
+    "alt": "IMG 1501",
+    "trip": "random",
+    "filename": "IMG_1501.jpeg"
+  },
+  {
+    "id": "random-img-1502-copy",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/IMG_1502 copy.jpeg",
+    "alt": "IMG 1502 copy",
+    "trip": "random",
+    "filename": "IMG_1502 copy.jpeg"
+  },
+  {
+    "id": "random-img-1504",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/IMG_1504.jpeg",
+    "alt": "IMG 1504",
+    "trip": "random",
+    "filename": "IMG_1504.jpeg"
+  },
+  {
+    "id": "random-img-1506",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/IMG_1506.jpeg",
+    "alt": "IMG 1506",
+    "trip": "random",
+    "filename": "IMG_1506.jpeg"
   }
 ];
