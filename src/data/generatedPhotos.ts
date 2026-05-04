@@ -1,5 +1,5 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-04-22T01:42:34.410Z
+// Generated on: 2026-05-04T18:29:41.166Z
 // Run 'bash scripts/update-photos.sh' to regenerate
 
 import { Trip, Photo } from '@/types';
@@ -203,6 +203,83 @@ export const photos: Photo[] = [
     "alt": "IMG 1451 SnapseedCopy",
     "trip": "newzealand-2024",
     "filename": "IMG_1451_SnapseedCopy.jpeg"
+  },
+  {
+    "id": "nyc-2026-dscf2987",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/nyc-2026/DSCF2987.jpeg",
+    "alt": "DSCF2987",
+    "trip": "nyc-2026",
+    "filename": "DSCF2987.jpeg"
+  },
+  {
+    "id": "nyc-2026-dscf2997",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/nyc-2026/DSCF2997.jpeg",
+    "alt": "DSCF2997",
+    "trip": "nyc-2026",
+    "filename": "DSCF2997.jpeg"
+  },
+  {
+    "id": "nyc-2026-dscf3089",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/nyc-2026/DSCF3089.jpeg",
+    "alt": "DSCF3089",
+    "trip": "nyc-2026",
+    "filename": "DSCF3089.jpeg"
+  },
+  {
+    "id": "nyc-2026-dscf3100",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/nyc-2026/DSCF3100.jpeg",
+    "alt": "DSCF3100",
+    "trip": "nyc-2026",
+    "filename": "DSCF3100.jpeg"
+  },
+  {
+    "id": "nyc-2026-dscf3106",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/nyc-2026/DSCF3106.jpeg",
+    "alt": "DSCF3106",
+    "trip": "nyc-2026",
+    "filename": "DSCF3106.jpeg"
+  },
+  {
+    "id": "nyc-2026-dscf3122",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/nyc-2026/DSCF3122.jpeg",
+    "alt": "DSCF3122",
+    "trip": "nyc-2026",
+    "filename": "DSCF3122.jpeg"
+  },
+  {
+    "id": "nyc-2026-dscf3133",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/nyc-2026/DSCF3133.jpeg",
+    "alt": "DSCF3133",
+    "trip": "nyc-2026",
+    "filename": "DSCF3133.jpeg"
+  },
+  {
+    "id": "nyc-2026-dscf3147",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/nyc-2026/DSCF3147.jpeg",
+    "alt": "DSCF3147",
+    "trip": "nyc-2026",
+    "filename": "DSCF3147.jpeg"
+  },
+  {
+    "id": "nyc-2026-dscf3171",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/nyc-2026/DSCF3171.jpeg",
+    "alt": "DSCF3171",
+    "trip": "nyc-2026",
+    "filename": "DSCF3171.jpeg"
+  },
+  {
+    "id": "nyc-2026-dscf3182",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/nyc-2026/DSCF3182.jpeg",
+    "alt": "DSCF3182",
+    "trip": "nyc-2026",
+    "filename": "DSCF3182.jpeg"
+  },
+  {
+    "id": "nyc-2026-dscf3197",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/nyc-2026/DSCF3197.jpeg",
+    "alt": "DSCF3197",
+    "trip": "nyc-2026",
+    "filename": "DSCF3197.jpeg"
   },
   {
     "id": "random-dscf0119",
