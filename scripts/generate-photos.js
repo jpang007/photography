@@ -119,6 +119,13 @@ async function generatePhotosData() {
     });
   });
 
+  // Sort photos within each trip by filename
+  Object.keys(tripPhotos).forEach((slug) => {
+    tripPhotos[slug].sort((a, b) => {
+      return a.filename.localeCompare(b.filename, undefined, { numeric: true, sensitivity: 'base' });
+    });
+  });
+
   // Generate trips array with auto-detection and custom overrides
   const trips = Object.entries(tripPhotos).map(([slug, photos]) => {
     // Use custom metadata if available, otherwise auto-generate
@@ -140,7 +147,7 @@ async function generatePhotosData() {
     .filter((obj) => isImageFile(obj.Key))
     .map((obj) => `${S3_BASE_URL}/${obj.Key}`);
 
-  // Generate all photos array
+  // Generate all photos array (already sorted within each trip)
   const allPhotos = Object.values(tripPhotos).flat();
 
   console.log(`Found ${allPhotos.length} photos across ${trips.length} trips`);
