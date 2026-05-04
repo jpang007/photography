@@ -1,12 +1,10 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-05-04T18:29:41.166Z
-// Run 'bash scripts/update-photos.sh' to regenerate
-
-import { Trip, Photo } from '@/types';
+// Generated on: 2026-05-04T18:33:43.908Z
+// Run 'node scripts/generate-photos.js' to regenerate
 
 export const S3_BASE_URL = 'https://jeremyjpangphotos.s3.us-east-2.amazonaws.com';
 
-export const heroImages: string[] = [
+export const heroImages = [
   "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/hero/DSCF0035.jpeg",
   "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/hero/DSCF0706.jpeg",
   "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/hero/DSCF3458.jpeg",
@@ -18,7 +16,7 @@ export const heroImages: string[] = [
   "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/hero/DSCF9376.jpeg"
 ];
 
-export const trips: Trip[] = [
+export const trips = [
   {
     "id": "china-2023",
     "slug": "china-2023",
@@ -27,6 +25,24 @@ export const trips: Trip[] = [
     "description": "Exploring the ancient and modern landscapes of China",
     "count": 4,
     "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2023/DSCF3370.jpeg"
+  },
+  {
+    "id": "china-2025",
+    "slug": "china-2025",
+    "name": "China",
+    "year": "2025",
+    "description": "China 2025",
+    "count": 1,
+    "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2025/DSCF5544.jpeg"
+  },
+  {
+    "id": "italy-2025",
+    "slug": "italy-2025",
+    "name": "Italy",
+    "year": "2025",
+    "description": "Discovering art, culture, and cuisine in Italy",
+    "count": 7,
+    "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/italy-2025/454C24CE-7AAB-4F8E-9191-37FEC14FD898-58951-00001551ED9ADF18.jpeg"
   },
   {
     "id": "japan-2023",
@@ -47,31 +63,13 @@ export const trips: Trip[] = [
     "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/newzealand-2024/DSCF4271.jpeg"
   },
   {
-    "id": "vancouver-2024",
-    "slug": "vancouver-2024",
-    "name": "Vancouver",
-    "year": "2024",
-    "description": "Urban exploration in beautiful Vancouver",
-    "count": 0,
-    "coverImage": ""
-  },
-  {
-    "id": "china-2025",
-    "slug": "china-2025",
-    "name": "China",
-    "year": "2025",
-    "description": "Exploring the ancient and modern landscapes of China",
-    "count": 1,
-    "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2025/DSCF5544.jpeg"
-  },
-  {
-    "id": "italy-2025",
-    "slug": "italy-2025",
-    "name": "Italy",
-    "year": "2025",
-    "description": "Discovering art, culture, and cuisine in Italy",
-    "count": 7,
-    "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/italy-2025/454C24CE-7AAB-4F8E-9191-37FEC14FD898-58951-00001551ED9ADF18.jpeg"
+    "id": "nyc-2026",
+    "slug": "nyc-2026",
+    "name": "Nyc",
+    "year": "2026",
+    "description": "Nyc 2026",
+    "count": 11,
+    "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/nyc-2026/DSCF2987.jpeg"
   },
   {
     "id": "random",
@@ -84,7 +82,7 @@ export const trips: Trip[] = [
   }
 ];
 
-export const photos: Photo[] = [
+export const photos = [
   {
     "id": "china-2023-dscf3370",
     "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2023/DSCF3370.jpeg",
