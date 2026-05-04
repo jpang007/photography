@@ -16,34 +16,51 @@ const HERO_PREFIX = 'hero/';
 
 const s3Client = new S3Client({ region: 'us-east-2' });
 
-// Trip metadata (update this as you add trips)
-const TRIP_METADATA = {
-  'china-2023': {
-    name: 'China',
-    year: '2023',
-    description: 'Exploring the ancient and modern landscapes of China',
-  },
-  'japan-2023': {
-    name: 'Japan',
-    year: '2023',
-    description: 'A journey through Japanese culture and tradition',
-  },
-  'newzealand-2024': {
-    name: 'New Zealand',
-    year: '2024',
-    description: 'Adventures across the breathtaking landscapes of New Zealand',
-  },
-  'vancouver-2024': {
-    name: 'Vancouver',
-    year: '2024',
-    description: 'Urban exploration in beautiful Vancouver',
-  },
-  'random': {
-    name: 'Moments',
-    year: '',
-    description: 'Random captures and everyday moments',
-  },
-};
+// Optional: Load custom trip metadata from trips-config.json
+function loadTripConfig() {
+  const configPath = path.join(__dirname, 'trips-config.json');
+  if (fs.existsSync(configPath)) {
+    try {
+      const config = JSON.parse(fs.readFileSync(configPath, 'utf-8'));
+      console.log('✓ Loaded custom trip metadata from trips-config.json\n');
+      return config;
+    } catch (error) {
+      console.warn('⚠ Error reading trips-config.json, using auto-generated metadata');
+      return {};
+    }
+  }
+  return {};
+}
+
+// Auto-generate trip metadata from folder name
+function generateTripMetadata(tripSlug) {
+  const parts = tripSlug.split('-');
+
+  // Special case: 'random' folder
+  if (tripSlug === 'random') {
+    return {
+      name: 'Moments',
+      year: '',
+      description: 'Random captures and everyday moments',
+    };
+  }
+
+  // Parse location-year format (e.g., "italy-2025" or "newzealand-2024")
+  const year = parts[parts.length - 1].match(/^\d{4}$/) ? parts.pop() : '';
+  const location = parts.join(' ');
+
+  // Capitalize location name
+  const name = location
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+
+  return {
+    name,
+    year,
+    description: `${name} ${year}`.trim(),
+  };
+}
 
 async function listS3Objects(prefix) {
   const command = new ListObjectsV2Command({
@@ -67,6 +84,9 @@ function generatePhotoId(tripSlug, filename) {
 
 async function generatePhotosData() {
   console.log('Fetching images from S3...\n');
+
+  // Load optional custom metadata
+  const customMetadata = loadTripConfig();
 
   // Get all gallery images
   const galleryObjects = await listS3Objects(GALLERY_PREFIX);
@@ -99,13 +119,10 @@ async function generatePhotosData() {
     });
   });
 
-  // Generate trips array
+  // Generate trips array with auto-detection and custom overrides
   const trips = Object.entries(tripPhotos).map(([slug, photos]) => {
-    const metadata = TRIP_METADATA[slug] || {
-      name: slug.split('-')[0].charAt(0).toUpperCase() + slug.split('-')[0].slice(1),
-      year: slug.split('-')[1] || '',
-      description: '',
-    };
+    // Use custom metadata if available, otherwise auto-generate
+    const metadata = customMetadata[slug] || generateTripMetadata(slug);
 
     return {
       id: slug,

@@ -1,0 +1,22 @@
+{
+  "_comment": "Optional configuration file for custom trip metadata",
+  "_usage": "Only add entries for trips you want to customize. All other trips will be auto-generated from S3 folder names.",
+
+  "italy-2025": {
+    "name": "Italy",
+    "year": "2025",
+    "description": "Discovering art, culture, and cuisine in Italy"
+  },
+
+  "japan-2023": {
+    "name": "Japan",
+    "year": "2023",
+    "description": "A journey through Japanese culture and tradition"
+  },
+
+  "random": {
+    "name": "Moments",
+    "year": "",
+    "description": "Random captures and everyday moments"
+  }
+}
