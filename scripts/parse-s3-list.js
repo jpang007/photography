@@ -13,6 +13,10 @@ const S3_BASE_URL = `https://${BUCKET_NAME}.s3.us-east-2.amazonaws.com`;
 const GALLERY_PREFIX = 'gallery/';
 const HERO_PREFIX = 'hero/';
 
+function getS3ObjectUrl(key) {
+  return `${S3_BASE_URL}/${key.split('/').map(encodeURIComponent).join('/')}`;
+}
+
 // Trip metadata (update this as you add trips)
 const TRIP_METADATA = {
   'china-2023': {
@@ -110,7 +114,7 @@ function generateData(files) {
 
     tripPhotos[tripSlug].push({
       id: generatePhotoId(tripSlug, filename),
-      src: `${S3_BASE_URL}/${key}`,
+      src: getS3ObjectUrl(key),
       alt: filename.replace(/\.[^.]+$/, '').replace(/[-_]/g, ' '),
       trip: tripSlug,
       filename: filename,
@@ -133,7 +137,7 @@ function generateData(files) {
   });
 
   // Generate hero images array
-  const heroImages = heroFiles.map((key) => `${S3_BASE_URL}/${key}`);
+  const heroImages = heroFiles.map((key) => getS3ObjectUrl(key));
 
   // Generate all photos array
   const allPhotos = Object.values(tripPhotos).flat();

@@ -162,14 +162,14 @@ export const photos = [
   },
   {
     "id": "italy-2025-dscf7960--1-",
-    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/italy-2025/DSCF7960 (1).jpeg",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/italy-2025/DSCF7960%20(1).jpeg",
     "alt": "DSCF7960 (1)",
     "trip": "italy-2025",
     "filename": "DSCF7960 (1).jpeg"
   },
   {
     "id": "italy-2025-snapseed-2",
-    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/italy-2025/Snapseed 2.jpeg",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/italy-2025/Snapseed%202.jpeg",
     "alt": "Snapseed 2",
     "trip": "italy-2025",
     "filename": "Snapseed 2.jpeg"
@@ -295,7 +295,7 @@ export const photos = [
   },
   {
     "id": "nyc-2026-dscf3187--1-",
-    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/nyc-2026/DSCF3187 (1).jpeg",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/nyc-2026/DSCF3187%20(1).jpeg",
     "alt": "DSCF3187 (1)",
     "trip": "nyc-2026",
     "filename": "DSCF3187 (1).jpeg"
@@ -351,7 +351,7 @@ export const photos = [
   },
   {
     "id": "random-img-1502-copy",
-    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/IMG_1502 copy.jpeg",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/IMG_1502%20copy.jpeg",
     "alt": "IMG 1502 copy",
     "trip": "random",
     "filename": "IMG_1502 copy.jpeg"

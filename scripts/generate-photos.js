@@ -16,6 +16,10 @@ const HERO_PREFIX = 'hero/';
 
 const s3Client = new S3Client({ region: 'us-east-2' });
 
+function getS3ObjectUrl(key) {
+  return `${S3_BASE_URL}/${key.split('/').map(encodeURIComponent).join('/')}`;
+}
+
 // Optional: Load custom trip metadata from trips-config.json
 function loadTripConfig() {
   const configPath = path.join(__dirname, 'trips-config.json');
@@ -112,7 +116,7 @@ async function generatePhotosData() {
 
     tripPhotos[tripSlug].push({
       id: generatePhotoId(tripSlug, filename),
-      src: `${S3_BASE_URL}/${obj.Key}`,
+      src: getS3ObjectUrl(obj.Key),
       alt: filename.replace(/\.[^.]+$/, '').replace(/[-_]/g, ' '),
       trip: tripSlug,
       filename: filename,
@@ -145,7 +149,7 @@ async function generatePhotosData() {
   // Generate hero images array
   const heroImages = heroObjects
     .filter((obj) => isImageFile(obj.Key))
-    .map((obj) => `${S3_BASE_URL}/${obj.Key}`);
+    .map((obj) => getS3ObjectUrl(obj.Key));
 
   // Generate all photos array (already sorted within each trip)
   const allPhotos = Object.values(tripPhotos).flat();
