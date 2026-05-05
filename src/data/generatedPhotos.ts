@@ -1,5 +1,5 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-05-05T02:27:22.857Z
+// Generated on: 2026-05-05T02:34:26.569Z
 // Run 'node scripts/generate-photos.js' to regenerate
 
 export const S3_BASE_URL = 'https://jeremyjpangphotos.s3.us-east-2.amazonaws.com';
