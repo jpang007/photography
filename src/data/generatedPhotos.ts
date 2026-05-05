@@ -1,5 +1,5 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-05-04T18:50:52.492Z
+// Generated on: 2026-05-05T02:20:19.830Z
 // Run 'node scripts/generate-photos.js' to regenerate
 
 export const S3_BASE_URL = 'https://jeremyjpangphotos.s3.us-east-2.amazonaws.com';
@@ -23,7 +23,7 @@ export const trips = [
     "name": "China",
     "year": "2023",
     "description": "Exploring the ancient and modern landscapes of China",
-    "count": 4,
+    "count": 5,
     "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2023/DSCF3370.jpeg"
   },
   {
@@ -110,6 +110,13 @@ export const photos = [
     "alt": "DSCF3579",
     "trip": "china-2023",
     "filename": "DSCF3579.jpeg"
+  },
+  {
+    "id": "china-2023-dscf3586",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2023/DSCF3586.jpeg",
+    "alt": "DSCF3586",
+    "trip": "china-2023",
+    "filename": "DSCF3586.jpeg"
   },
   {
     "id": "china-2025-dscf5544",
