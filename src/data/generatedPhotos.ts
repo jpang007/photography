@@ -1,5 +1,5 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-05-05T02:20:19.830Z
+// Generated on: 2026-05-05T02:27:22.857Z
 // Run 'node scripts/generate-photos.js' to regenerate
 
 export const S3_BASE_URL = 'https://jeremyjpangphotos.s3.us-east-2.amazonaws.com';
@@ -68,7 +68,7 @@ export const trips = [
     "name": "Nyc",
     "year": "2026",
     "description": "Nyc 2026",
-    "count": 11,
+    "count": 14,
     "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/nyc-2026/DSCF2987.jpeg"
   },
   {
@@ -259,6 +259,13 @@ export const photos = [
     "filename": "DSCF3133.jpeg"
   },
   {
+    "id": "nyc-2026-dscf3141",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/nyc-2026/DSCF3141.jpeg",
+    "alt": "DSCF3141",
+    "trip": "nyc-2026",
+    "filename": "DSCF3141.jpeg"
+  },
+  {
     "id": "nyc-2026-dscf3147",
     "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/nyc-2026/DSCF3147.jpeg",
     "alt": "DSCF3147",
@@ -278,6 +285,20 @@ export const photos = [
     "alt": "DSCF3182",
     "trip": "nyc-2026",
     "filename": "DSCF3182.jpeg"
+  },
+  {
+    "id": "nyc-2026-dscf3186",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/nyc-2026/DSCF3186.jpeg",
+    "alt": "DSCF3186",
+    "trip": "nyc-2026",
+    "filename": "DSCF3186.jpeg"
+  },
+  {
+    "id": "nyc-2026-dscf3187--1-",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/nyc-2026/DSCF3187 (1).jpeg",
+    "alt": "DSCF3187 (1)",
+    "trip": "nyc-2026",
+    "filename": "DSCF3187 (1).jpeg"
   },
   {
     "id": "nyc-2026-dscf3197",
