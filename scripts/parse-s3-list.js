@@ -17,6 +17,43 @@ function getS3ObjectUrl(key) {
   return `${S3_BASE_URL}/${key.split('/').map(encodeURIComponent).join('/')}`;
 }
 
+function getPhotoKey(tripSlug, filename) {
+  return `${tripSlug}/${filename}`;
+}
+
+function loadPortfolioLayout() {
+  const layoutPath = path.join(__dirname, 'portfolio-layout.json');
+  if (fs.existsSync(layoutPath)) {
+    try {
+      return JSON.parse(fs.readFileSync(layoutPath, 'utf-8'));
+    } catch (error) {
+      console.warn('⚠ Error reading portfolio-layout.json, using filename order');
+    }
+  }
+
+  return {
+    tripOrder: [],
+    photoOrder: {},
+    allPhotoOrder: [],
+    dimensions: {},
+  };
+}
+
+function compareByOrder(order, getKey) {
+  const rank = new Map(order.map((key, index) => [key, index]));
+
+  return (a, b) => {
+    const aRank = rank.get(getKey(a));
+    const bRank = rank.get(getKey(b));
+
+    if (aRank !== undefined && bRank !== undefined) return aRank - bRank;
+    if (aRank !== undefined) return -1;
+    if (bRank !== undefined) return 1;
+
+    return a.filename.localeCompare(b.filename, undefined, { numeric: true, sensitivity: 'base' });
+  };
+}
+
 // Trip metadata (update this as you add trips)
 const TRIP_METADATA = {
   'china-2023': {
@@ -48,6 +85,11 @@ const TRIP_METADATA = {
     name: 'Italy',
     year: '2025',
     description: 'Discovering art, culture, and cuisine in Italy',
+  },
+  'nyc-2026': {
+    name: 'New York',
+    year: '2026',
+    description: 'Street studies, skyline light, and late-night fragments from New York',
   },
   'random': {
     name: 'Moments',
@@ -91,6 +133,7 @@ function parseS3List(inputFile) {
 
 function generateData(files) {
   console.log(`Processing ${files.length} images...\n`);
+  const portfolioLayout = loadPortfolioLayout();
 
   // Separate gallery and hero images
   const galleryFiles = files.filter(f => f.startsWith(GALLERY_PREFIX));
@@ -112,13 +155,20 @@ function generateData(files) {
       tripPhotos[tripSlug] = [];
     }
 
+    const dimensions = portfolioLayout.dimensions?.[getPhotoKey(tripSlug, filename)] || {};
+
     tripPhotos[tripSlug].push({
       id: generatePhotoId(tripSlug, filename),
       src: getS3ObjectUrl(key),
       alt: filename.replace(/\.[^.]+$/, '').replace(/[-_]/g, ' '),
       trip: tripSlug,
       filename: filename,
+      ...dimensions,
     });
+  });
+
+  Object.keys(tripPhotos).forEach((slug) => {
+    tripPhotos[slug].sort(compareByOrder(portfolioLayout.photoOrder?.[slug] || [], (photo) => photo.filename));
   });
 
   // Generate trips array from metadata (show all trips even if empty)
@@ -134,13 +184,25 @@ function generateData(files) {
       count: photos.length,
       coverImage: photos[0]?.src || '',
     };
+  }).sort((a, b) => {
+    const order = portfolioLayout.tripOrder || [];
+    const aRank = order.indexOf(a.slug);
+    const bRank = order.indexOf(b.slug);
+
+    if (aRank !== -1 && bRank !== -1) return aRank - bRank;
+    if (aRank !== -1) return -1;
+    if (bRank !== -1) return 1;
+
+    return `${b.year}${b.name}`.localeCompare(`${a.year}${a.name}`);
   });
 
   // Generate hero images array
   const heroImages = heroFiles.map((key) => getS3ObjectUrl(key));
 
   // Generate all photos array
-  const allPhotos = Object.values(tripPhotos).flat();
+  const allPhotos = Object.values(tripPhotos)
+    .flat()
+    .sort(compareByOrder(portfolioLayout.allPhotoOrder || [], (photo) => getPhotoKey(photo.trip, photo.filename)));
 
   console.log(`Found ${allPhotos.length} photos across ${trips.length} trips`);
   console.log(`Found ${heroImages.length} hero images\n`);

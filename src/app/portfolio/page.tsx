@@ -1,13 +1,15 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import GalleryGrid from '@/components/GalleryGrid';
 import TripFilter from '@/components/TripFilter';
 import { photos, trips } from '@/data/generatedPhotos';
 import { Photo } from '@/types';
 
 export default function PortfolioPage() {
+  const router = useRouter();
+  const pathname = usePathname();
   const searchParams = useSearchParams();
   const [activeTrip, setActiveTrip] = useState<string | null>(null);
 
@@ -23,31 +25,43 @@ export default function PortfolioPage() {
   const filteredPhotos: Photo[] = activeTrip
     ? photos.filter((photo) => photo.trip === activeTrip)
     : photos;
+  const activeTripData = activeTrip
+    ? trips.find((trip) => trip.slug === activeTrip)
+    : null;
+
+  const handleSelectTrip = (slug: string | null) => {
+    setActiveTrip(slug);
+    router.replace(slug ? `${pathname}?trip=${slug}` : pathname, { scroll: false });
+  };
 
   return (
-    <div className="pt-32 pb-24 px-6 md:px-12 lg:px-24">
+    <div className="px-4 pb-24 pt-28 md:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto">
-        {/* Page Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-serif mb-4">Portfolio</h1>
-          <p className="text-neutral-600 text-lg max-w-2xl mx-auto">
-            Explore my photography collection from travels and adventures
-          </p>
+        <div className="mb-10 grid gap-6 border-b border-neutral-200 pb-8 md:grid-cols-[1fr_auto] md:items-end">
+          <div>
+            <p className="mb-4 text-xs font-medium uppercase tracking-[0.24em] text-neutral-500">
+              Portfolio
+            </p>
+            <h1 className="text-5xl md:text-7xl">
+              {activeTripData ? `${activeTripData.name} ${activeTripData.year}` : 'All Photographs'}
+            </h1>
+            <p className="mt-5 max-w-2xl text-base leading-7 text-neutral-600 md:text-lg">
+              {activeTripData
+                ? activeTripData.description
+                : 'A collected view of travel, street, landscape, and everyday photography.'}
+            </p>
+          </div>
+          <div className="text-sm text-neutral-500 md:text-right">
+            {filteredPhotos.length} {filteredPhotos.length === 1 ? 'photograph' : 'photographs'}
+          </div>
         </div>
 
-        {/* Trip Filter */}
         <TripFilter
           trips={trips}
           activeTrip={activeTrip}
-          onSelectTrip={setActiveTrip}
+          onSelectTrip={handleSelectTrip}
         />
 
-        {/* Photo Count */}
-        <div className="text-center text-sm text-neutral-500 mb-8">
-          {filteredPhotos.length} {filteredPhotos.length === 1 ? 'photo' : 'photos'}
-        </div>
-
-        {/* Gallery */}
         <GalleryGrid photos={filteredPhotos} />
       </div>
     </div>

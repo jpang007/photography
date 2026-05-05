@@ -51,55 +51,54 @@ export default function TripFilter({ trips, activeTrip, onSelectTrip }: TripFilt
   };
 
   return (
-    <div className="mb-12 max-w-4xl mx-auto">
-      {/* All Button */}
-      <div className="flex justify-center mb-6">
+    <div className="mb-10">
+      <div className="mb-4 flex items-center justify-between gap-4">
+        <p className="text-xs font-medium uppercase tracking-[0.22em] text-neutral-500">
+          Browse by trip
+        </p>
         <button
           onClick={() => onSelectTrip(null)}
-          className={`px-8 py-2.5 text-sm tracking-wide transition-smooth ${
+          className={`min-h-10 border px-4 text-xs font-medium uppercase tracking-[0.16em] transition-smooth ${
             activeTrip === null
-              ? 'bg-neutral-900 text-white'
-              : 'bg-neutral-200 text-neutral-700 hover:bg-neutral-300'
+              ? 'border-neutral-900 bg-neutral-900 text-white'
+              : 'border-neutral-300 bg-white text-neutral-600 hover:border-neutral-900 hover:text-neutral-900'
           }`}
         >
-          All Photos
+          All
         </button>
       </div>
 
-      {/* Grouped by Year */}
-      <div className="space-y-4">
+      <div className="space-y-3">
         {tripsByYear.map(({ year, trips: yearTrips }) => (
-          <div key={year} className="border border-neutral-200 bg-white">
-            {/* Year Header */}
+          <div key={year} className="border-t border-neutral-200 pt-3">
             <button
               onClick={() => toggleYear(year)}
-              className="w-full px-6 py-3 flex items-center justify-between hover:bg-neutral-50 transition-smooth"
+              className="flex w-full items-center justify-between py-2 text-left transition-smooth hover:text-neutral-600"
             >
-              <span className="font-medium text-neutral-900">
+              <span className="text-sm font-medium text-neutral-900">
                 {year === 'Other' ? 'Other' : year}
-                <span className="ml-2 text-sm text-neutral-500">
+                <span className="ml-2 text-xs font-normal text-neutral-500">
                   ({yearTrips.length} {yearTrips.length === 1 ? 'trip' : 'trips'})
                 </span>
               </span>
-              <span className="text-neutral-400 text-xl">
+              <span className="text-xl leading-none text-neutral-400">
                 {expandedYears.has(year) ? '−' : '+'}
               </span>
             </button>
 
-            {/* Trip Buttons */}
             {expandedYears.has(year) && (
-              <div className="px-6 pb-4 flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 pb-2 pt-1">
                 {yearTrips.map((trip) => (
                   <button
                     key={trip.id}
                     onClick={() => onSelectTrip(trip.slug)}
-                    className={`px-5 py-2 text-sm tracking-wide transition-smooth ${
+                    className={`min-h-10 border px-4 text-sm transition-smooth ${
                       activeTrip === trip.slug
-                        ? 'bg-neutral-900 text-white'
-                        : 'bg-neutral-100 text-neutral-700 hover:bg-neutral-200'
+                        ? 'border-neutral-900 bg-neutral-900 text-white'
+                        : 'border-neutral-200 bg-white text-neutral-600 hover:border-neutral-900 hover:text-neutral-900'
                     }`}
                   >
-                    {trip.name}
+                    {trip.name}{trip.year ? ` ${trip.year}` : ''}
                   </button>
                 ))}
               </div>

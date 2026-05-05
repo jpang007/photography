@@ -20,6 +20,45 @@ function getS3ObjectUrl(key) {
   return `${S3_BASE_URL}/${key.split('/').map(encodeURIComponent).join('/')}`;
 }
 
+function getPhotoKey(tripSlug, filename) {
+  return `${tripSlug}/${filename}`;
+}
+
+function loadPortfolioLayout() {
+  const layoutPath = path.join(__dirname, 'portfolio-layout.json');
+  if (fs.existsSync(layoutPath)) {
+    try {
+      const layout = JSON.parse(fs.readFileSync(layoutPath, 'utf-8'));
+      console.log('✓ Loaded portfolio layout from portfolio-layout.json\n');
+      return layout;
+    } catch (error) {
+      console.warn('⚠ Error reading portfolio-layout.json, using filename order');
+    }
+  }
+
+  return {
+    tripOrder: [],
+    photoOrder: {},
+    allPhotoOrder: [],
+    dimensions: {},
+  };
+}
+
+function compareByOrder(order, getKey) {
+  const rank = new Map(order.map((key, index) => [key, index]));
+
+  return (a, b) => {
+    const aRank = rank.get(getKey(a));
+    const bRank = rank.get(getKey(b));
+
+    if (aRank !== undefined && bRank !== undefined) return aRank - bRank;
+    if (aRank !== undefined) return -1;
+    if (bRank !== undefined) return 1;
+
+    return a.filename.localeCompare(b.filename, undefined, { numeric: true, sensitivity: 'base' });
+  };
+}
+
 // Optional: Load custom trip metadata from trips-config.json
 function loadTripConfig() {
   const configPath = path.join(__dirname, 'trips-config.json');
@@ -91,6 +130,7 @@ async function generatePhotosData() {
 
   // Load optional custom metadata
   const customMetadata = loadTripConfig();
+  const portfolioLayout = loadPortfolioLayout();
 
   // Get all gallery images
   const galleryObjects = await listS3Objects(GALLERY_PREFIX);
@@ -114,20 +154,21 @@ async function generatePhotosData() {
       tripPhotos[tripSlug] = [];
     }
 
+    const dimensions = portfolioLayout.dimensions?.[getPhotoKey(tripSlug, filename)] || {};
+
     tripPhotos[tripSlug].push({
       id: generatePhotoId(tripSlug, filename),
       src: getS3ObjectUrl(obj.Key),
       alt: filename.replace(/\.[^.]+$/, '').replace(/[-_]/g, ' '),
       trip: tripSlug,
       filename: filename,
+      ...dimensions,
     });
   });
 
-  // Sort photos within each trip by filename
+  // Sort photos within each trip by curated sequence, falling back to filename.
   Object.keys(tripPhotos).forEach((slug) => {
-    tripPhotos[slug].sort((a, b) => {
-      return a.filename.localeCompare(b.filename, undefined, { numeric: true, sensitivity: 'base' });
-    });
+    tripPhotos[slug].sort(compareByOrder(portfolioLayout.photoOrder?.[slug] || [], (photo) => photo.filename));
   });
 
   // Generate trips array with auto-detection and custom overrides
@@ -144,6 +185,16 @@ async function generatePhotosData() {
       count: photos.length,
       coverImage: photos[0]?.src || '',
     };
+  }).sort((a, b) => {
+    const order = portfolioLayout.tripOrder || [];
+    const aRank = order.indexOf(a.slug);
+    const bRank = order.indexOf(b.slug);
+
+    if (aRank !== -1 && bRank !== -1) return aRank - bRank;
+    if (aRank !== -1) return -1;
+    if (bRank !== -1) return 1;
+
+    return `${b.year}${b.name}`.localeCompare(`${a.year}${a.name}`);
   });
 
   // Generate hero images array
@@ -151,8 +202,10 @@ async function generatePhotosData() {
     .filter((obj) => isImageFile(obj.Key))
     .map((obj) => getS3ObjectUrl(obj.Key));
 
-  // Generate all photos array (already sorted within each trip)
-  const allPhotos = Object.values(tripPhotos).flat();
+  // Generate all photos array with an optional cross-trip editorial sequence.
+  const allPhotos = Object.values(tripPhotos)
+    .flat()
+    .sort(compareByOrder(portfolioLayout.allPhotoOrder || [], (photo) => getPhotoKey(photo.trip, photo.filename)));
 
   console.log(`Found ${allPhotos.length} photos across ${trips.length} trips`);
   console.log(`Found ${heroImages.length} hero images\n`);

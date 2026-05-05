@@ -43,36 +43,32 @@ export default function Lightbox({ photos, currentIndex, onClose, onNavigate }: 
   };
 
   return (
-    <div className="fixed inset-0 z-50 bg-white flex items-center justify-center">
-      {/* Close Button */}
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-neutral-950 text-white">
       <button
         onClick={onClose}
-        className="absolute top-6 right-6 text-neutral-400 hover:text-neutral-900 text-4xl leading-none z-10"
+        className="absolute right-4 top-4 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-3xl leading-none text-white transition-smooth hover:bg-white hover:text-neutral-950 md:right-6 md:top-6"
         aria-label="Close lightbox"
       >
         ×
       </button>
 
-      {/* Previous Button */}
       <button
         onClick={handlePrevious}
-        className="absolute left-6 text-neutral-400 hover:text-neutral-900 text-5xl z-10"
+        className="absolute left-3 z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-4xl leading-none text-white transition-smooth hover:bg-white hover:text-neutral-950 md:left-6"
         aria-label="Previous image"
       >
         ‹
       </button>
 
-      {/* Next Button */}
       <button
         onClick={handleNext}
-        className="absolute right-6 text-neutral-400 hover:text-neutral-900 text-5xl z-10"
+        className="absolute right-3 z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-4xl leading-none text-white transition-smooth hover:bg-white hover:text-neutral-950 md:right-6"
         aria-label="Next image"
       >
         ›
       </button>
 
-      {/* Image */}
-      <div className="relative w-full h-full flex items-center justify-center p-12 md:p-20">
+      <div className="relative flex h-full w-full items-center justify-center px-12 py-16 md:px-24 md:py-20">
         <div className="relative w-full h-full">
           <Image
             src={currentPhoto.src}
@@ -85,12 +81,11 @@ export default function Lightbox({ photos, currentIndex, onClose, onNavigate }: 
         </div>
       </div>
 
-      {/* Image Info */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center">
+      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 text-center">
         {currentPhoto.title && (
-          <p className="text-neutral-900 text-lg font-serif mb-1">{currentPhoto.title}</p>
+          <p className="mb-1 text-lg font-serif text-white">{currentPhoto.title}</p>
         )}
-        <p className="text-neutral-500 text-sm">
+        <p className="text-sm text-neutral-400">
           {currentIndex + 1} / {photos.length}
         </p>
       </div>

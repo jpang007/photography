@@ -18,5 +18,15 @@
     "name": "Italy",
     "year": "2025",
     "description": "Discovering art, culture, and cuisine in Italy"
+  },
+  "nyc-2026": {
+    "name": "New York",
+    "year": "2026",
+    "description": "Street studies, skyline light, and late-night fragments from New York"
+  },
+  "china-2025": {
+    "name": "China",
+    "year": "2025",
+    "description": "Color, signage, and dense city texture in China"
   }
 }
