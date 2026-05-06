@@ -1,5 +1,5 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-05-05T18:28:29.354Z
+// Generated on: 2026-05-06T00:28:56.180Z
 // Run 'node scripts/generate-photos.js' to regenerate
 
 export const S3_BASE_URL = 'https://jeremyjpangphotos.s3.us-east-2.amazonaws.com';
@@ -50,7 +50,7 @@ export const trips = [
     "name": "New Zealand",
     "year": "2024",
     "description": "Adventures across the breathtaking landscapes of New Zealand",
-    "count": 3,
+    "count": 4,
     "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/newzealand-2024/DSCF4271.jpeg"
   },
   {
@@ -451,5 +451,12 @@ export const photos = [
     "filename": "DSCF2997.jpeg",
     "width": 1280,
     "height": 854
+  },
+  {
+    "id": "newzealand-2024-dscf4344-birds-edit-v2-natural-fullres",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/newzealand-2024/DSCF4344_birds_edit_v2_natural_fullres.jpeg",
+    "alt": "DSCF4344 birds edit v2 natural fullres",
+    "trip": "newzealand-2024",
+    "filename": "DSCF4344_birds_edit_v2_natural_fullres.jpeg"
   }
 ];
