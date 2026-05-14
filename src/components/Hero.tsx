@@ -15,9 +15,23 @@ export default function Hero() {
   if (!randomImage) return null;
 
   return (
-    <section className="relative min-h-[88svh] overflow-hidden bg-white">
-      <div className="absolute inset-0 px-4 pb-24 pt-28 md:px-8 lg:px-12">
-        <div className="relative w-full h-full">
+    <section className="bg-white px-4 pb-12 pt-24 md:px-8 lg:px-12">
+      <div className="mx-auto max-w-[1600px]">
+        <div className="mb-6 flex flex-col gap-3 border-b border-neutral-200 pb-5 md:flex-row md:items-end md:justify-between">
+          <div>
+            <h1 className="text-3xl leading-none tracking-tight text-neutral-950 md:text-5xl">
+              {siteSettings.photographerName}
+            </h1>
+            <p className="mt-3 max-w-xl text-sm leading-6 text-neutral-600 md:text-base">
+              Travel, street, landscape, and quiet everyday frames.
+            </p>
+          </div>
+          <p className="text-xs font-medium uppercase tracking-[0.24em] text-neutral-500">
+            Seattle based
+          </p>
+        </div>
+
+        <div className="relative h-[70svh] min-h-[440px] w-full overflow-hidden bg-neutral-50">
           <Image
             src={randomImage}
             alt="Photography"
@@ -26,20 +40,6 @@ export default function Hero() {
             priority
             sizes="100vw"
           />
-        </div>
-      </div>
-
-      <div className="relative z-10 flex min-h-[88svh] items-end px-6 pb-10 md:px-12 lg:px-24">
-        <div className="max-w-3xl [text-shadow:0_1px_18px_rgba(255,255,255,0.9)]">
-          <p className="mb-4 text-xs font-medium uppercase tracking-[0.28em] text-neutral-500">
-            Seattle based
-          </p>
-          <h1 className="max-w-2xl text-5xl leading-[0.95] md:text-7xl lg:text-8xl">
-            {siteSettings.photographerName}
-          </h1>
-          <p className="mt-5 max-w-xl text-base leading-7 text-neutral-600 md:text-lg">
-            Travel, street, landscape, and quiet everyday frames.
-          </p>
         </div>
       </div>
     </section>
