@@ -1,5 +1,5 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-05-15T04:57:12.628Z
+// Generated on: 2026-05-15T05:00:12.960Z
 // Run 'node scripts/generate-photos.js' to regenerate
 
 export const S3_BASE_URL = 'https://jeremyjpangphotos.s3.us-east-2.amazonaws.com';
@@ -32,7 +32,7 @@ export const trips = [
     "name": "Italy",
     "year": "2025",
     "description": "Discovering art, culture, and cuisine in Italy",
-    "count": 7,
+    "count": 11,
     "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/italy-2025/454C24CE-7AAB-4F8E-9191-37FEC14FD898-58951-00001551ED9ADF18.jpeg"
   },
   {
@@ -516,5 +516,33 @@ export const photos = [
     "alt": "DSCF6764",
     "trip": "california-2025",
     "filename": "DSCF6764.jpeg"
+  },
+  {
+    "id": "italy-2025-dscf6947",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/italy-2025/DSCF6947.jpeg",
+    "alt": "DSCF6947",
+    "trip": "italy-2025",
+    "filename": "DSCF6947.jpeg"
+  },
+  {
+    "id": "italy-2025-dscf6968",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/italy-2025/DSCF6968.jpeg",
+    "alt": "DSCF6968",
+    "trip": "italy-2025",
+    "filename": "DSCF6968.jpeg"
+  },
+  {
+    "id": "italy-2025-dscf6969",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/italy-2025/DSCF6969.jpeg",
+    "alt": "DSCF6969",
+    "trip": "italy-2025",
+    "filename": "DSCF6969.jpeg"
+  },
+  {
+    "id": "italy-2025-fb36560f-036e-4e0f-a89f-d30fa10efd5f-58951-000014328630aab2",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/italy-2025/FB36560F-036E-4E0F-A89F-D30FA10EFD5F-58951-000014328630AAB2.jpeg",
+    "alt": "FB36560F 036E 4E0F A89F D30FA10EFD5F 58951 000014328630AAB2",
+    "trip": "italy-2025",
+    "filename": "FB36560F-036E-4E0F-A89F-D30FA10EFD5F-58951-000014328630AAB2.jpeg"
   }
 ];
