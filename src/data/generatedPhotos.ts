@@ -1,5 +1,5 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-05-06T00:28:56.180Z
+// Generated on: 2026-05-15T04:57:12.628Z
 // Run 'node scripts/generate-photos.js' to regenerate
 
 export const S3_BASE_URL = 'https://jeremyjpangphotos.s3.us-east-2.amazonaws.com';
@@ -23,7 +23,7 @@ export const trips = [
     "name": "New York",
     "year": "2026",
     "description": "Street studies, skyline light, and late-night fragments from New York",
-    "count": 14,
+    "count": 15,
     "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/nyc-2026/DSCF3197.jpeg"
   },
   {
@@ -77,8 +77,17 @@ export const trips = [
     "name": "Moments",
     "year": "",
     "description": "Random captures and everyday moments",
-    "count": 9,
+    "count": 11,
     "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/DSCF0119.jpeg"
+  },
+  {
+    "id": "california-2025",
+    "slug": "california-2025",
+    "name": "California",
+    "year": "2025",
+    "description": "California 2025",
+    "count": 4,
+    "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/california-2025/DSCF6571.jpeg"
   }
 ];
 
@@ -453,10 +462,59 @@ export const photos = [
     "height": 854
   },
   {
+    "id": "nyc-2026-dandelions-spring-film-edit-v1",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/nyc-2026/dandelions_spring_film_edit_v1.jpeg",
+    "alt": "dandelions spring film edit v1",
+    "trip": "nyc-2026",
+    "filename": "dandelions_spring_film_edit_v1.jpeg"
+  },
+  {
     "id": "newzealand-2024-dscf4344-birds-edit-v2-natural-fullres",
     "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/newzealand-2024/DSCF4344_birds_edit_v2_natural_fullres.jpeg",
     "alt": "DSCF4344 birds edit v2 natural fullres",
     "trip": "newzealand-2024",
     "filename": "DSCF4344_birds_edit_v2_natural_fullres.jpeg"
+  },
+  {
+    "id": "random-dscf6434",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/DSCF6434.jpeg",
+    "alt": "DSCF6434",
+    "trip": "random",
+    "filename": "DSCF6434.jpeg"
+  },
+  {
+    "id": "california-2025-dscf6571",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/california-2025/DSCF6571.jpeg",
+    "alt": "DSCF6571",
+    "trip": "california-2025",
+    "filename": "DSCF6571.jpeg"
+  },
+  {
+    "id": "california-2025-dscf6583",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/california-2025/DSCF6583.jpeg",
+    "alt": "DSCF6583",
+    "trip": "california-2025",
+    "filename": "DSCF6583.jpeg"
+  },
+  {
+    "id": "california-2025-dscf6615",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/california-2025/DSCF6615.jpeg",
+    "alt": "DSCF6615",
+    "trip": "california-2025",
+    "filename": "DSCF6615.jpeg"
+  },
+  {
+    "id": "random-dscf6640",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/DSCF6640.jpeg",
+    "alt": "DSCF6640",
+    "trip": "random",
+    "filename": "DSCF6640.jpeg"
+  },
+  {
+    "id": "california-2025-dscf6764",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/california-2025/DSCF6764.jpeg",
+    "alt": "DSCF6764",
+    "trip": "california-2025",
+    "filename": "DSCF6764.jpeg"
   }
 ];
