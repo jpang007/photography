@@ -1,5 +1,5 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-05-15T23:45:19.413Z
+// Generated on: 2026-05-26T04:24:55.233Z
 // Run 'node scripts/generate-photos.js' to regenerate
 
 export const S3_BASE_URL = 'https://jeremyjpangphotos.s3.us-east-2.amazonaws.com';
@@ -79,6 +79,15 @@ export const trips = [
     "description": "Random captures and everyday moments",
     "count": 11,
     "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/DSCF0119.jpeg"
+  },
+  {
+    "id": "cdmx-2026",
+    "slug": "cdmx-2026",
+    "name": "Cdmx",
+    "year": "2026",
+    "description": "Cdmx 2026",
+    "count": 14,
+    "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/cdmx-2026/DSCF3407.jpeg"
   },
   {
     "id": "california-2025",
@@ -467,6 +476,104 @@ export const photos = [
     "alt": "dandelions spring film edit v1",
     "trip": "nyc-2026",
     "filename": "dandelions_spring_film_edit_v1.jpeg"
+  },
+  {
+    "id": "cdmx-2026-dscf3407",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/cdmx-2026/DSCF3407.jpeg",
+    "alt": "DSCF3407",
+    "trip": "cdmx-2026",
+    "filename": "DSCF3407.jpeg"
+  },
+  {
+    "id": "cdmx-2026-dscf3415",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/cdmx-2026/DSCF3415.jpeg",
+    "alt": "DSCF3415",
+    "trip": "cdmx-2026",
+    "filename": "DSCF3415.jpeg"
+  },
+  {
+    "id": "cdmx-2026-dscf3434",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/cdmx-2026/DSCF3434.jpeg",
+    "alt": "DSCF3434",
+    "trip": "cdmx-2026",
+    "filename": "DSCF3434.jpeg"
+  },
+  {
+    "id": "cdmx-2026-dscf3482",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/cdmx-2026/DSCF3482.jpeg",
+    "alt": "DSCF3482",
+    "trip": "cdmx-2026",
+    "filename": "DSCF3482.jpeg"
+  },
+  {
+    "id": "cdmx-2026-dscf3585",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/cdmx-2026/DSCF3585.jpeg",
+    "alt": "DSCF3585",
+    "trip": "cdmx-2026",
+    "filename": "DSCF3585.jpeg"
+  },
+  {
+    "id": "cdmx-2026-dscf3586",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/cdmx-2026/DSCF3586.jpeg",
+    "alt": "DSCF3586",
+    "trip": "cdmx-2026",
+    "filename": "DSCF3586.jpeg"
+  },
+  {
+    "id": "cdmx-2026-dscf3607",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/cdmx-2026/DSCF3607.jpeg",
+    "alt": "DSCF3607",
+    "trip": "cdmx-2026",
+    "filename": "DSCF3607.jpeg"
+  },
+  {
+    "id": "cdmx-2026-dscf3611",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/cdmx-2026/DSCF3611.jpeg",
+    "alt": "DSCF3611",
+    "trip": "cdmx-2026",
+    "filename": "DSCF3611.jpeg"
+  },
+  {
+    "id": "cdmx-2026-dscf3612",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/cdmx-2026/DSCF3612.jpeg",
+    "alt": "DSCF3612",
+    "trip": "cdmx-2026",
+    "filename": "DSCF3612.jpeg"
+  },
+  {
+    "id": "cdmx-2026-dscf3617",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/cdmx-2026/DSCF3617.jpeg",
+    "alt": "DSCF3617",
+    "trip": "cdmx-2026",
+    "filename": "DSCF3617.jpeg"
+  },
+  {
+    "id": "cdmx-2026-dscf3668",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/cdmx-2026/DSCF3668.jpeg",
+    "alt": "DSCF3668",
+    "trip": "cdmx-2026",
+    "filename": "DSCF3668.jpeg"
+  },
+  {
+    "id": "cdmx-2026-dscf3670",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/cdmx-2026/DSCF3670.jpeg",
+    "alt": "DSCF3670",
+    "trip": "cdmx-2026",
+    "filename": "DSCF3670.jpeg"
+  },
+  {
+    "id": "cdmx-2026-dscf3746",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/cdmx-2026/DSCF3746.jpeg",
+    "alt": "DSCF3746",
+    "trip": "cdmx-2026",
+    "filename": "DSCF3746.jpeg"
+  },
+  {
+    "id": "cdmx-2026-dscf3749",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/cdmx-2026/DSCF3749.jpeg",
+    "alt": "DSCF3749",
+    "trip": "cdmx-2026",
+    "filename": "DSCF3749.jpeg"
   },
   {
     "id": "newzealand-2024-dscf4344-birds-edit-v2-natural-fullres",
