@@ -1,5 +1,5 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-05-26T04:24:55.233Z
+// Generated on: 2026-05-29T23:44:05.109Z
 // Run 'node scripts/generate-photos.js' to regenerate
 
 export const S3_BASE_URL = 'https://jeremyjpangphotos.s3.us-east-2.amazonaws.com';
@@ -77,7 +77,7 @@ export const trips = [
     "name": "Moments",
     "year": "",
     "description": "Random captures and everyday moments",
-    "count": 11,
+    "count": 14,
     "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/DSCF0119.jpeg"
   },
   {
@@ -476,6 +476,27 @@ export const photos = [
     "alt": "dandelions spring film edit v1",
     "trip": "nyc-2026",
     "filename": "dandelions_spring_film_edit_v1.jpeg"
+  },
+  {
+    "id": "random-dscf3315-1-edited",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/DSCF3315%201%20Edited.jpeg",
+    "alt": "DSCF3315 1 Edited",
+    "trip": "random",
+    "filename": "DSCF3315 1 Edited.jpeg"
+  },
+  {
+    "id": "random-dscf3321-2-edited",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/DSCF3321%202%20Edited.jpeg",
+    "alt": "DSCF3321 2 Edited",
+    "trip": "random",
+    "filename": "DSCF3321 2 Edited.jpeg"
+  },
+  {
+    "id": "random-dscf3348-3-edited",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/DSCF3348%203%20Edited.jpeg",
+    "alt": "DSCF3348 3 Edited",
+    "trip": "random",
+    "filename": "DSCF3348 3 Edited.jpeg"
   },
   {
     "id": "cdmx-2026-dscf3407",
