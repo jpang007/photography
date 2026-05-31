@@ -1,5 +1,5 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-05-29T23:44:05.109Z
+// Generated on: 2026-05-31T22:31:23.869Z
 // Run 'node scripts/generate-photos.js' to regenerate
 
 export const S3_BASE_URL = 'https://jeremyjpangphotos.s3.us-east-2.amazonaws.com';
@@ -97,6 +97,15 @@ export const trips = [
     "description": "California 2025",
     "count": 4,
     "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/california-2025/DSCF6571.jpeg"
+  },
+  {
+    "id": "barcelona-2025",
+    "slug": "barcelona-2025",
+    "name": "Barcelona",
+    "year": "2025",
+    "description": "Barcelona 2025",
+    "count": 8,
+    "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/barcelona-2025/DSCF0325.jpeg"
   }
 ];
 
@@ -476,6 +485,62 @@ export const photos = [
     "alt": "dandelions spring film edit v1",
     "trip": "nyc-2026",
     "filename": "dandelions_spring_film_edit_v1.jpeg"
+  },
+  {
+    "id": "barcelona-2025-dscf0325",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/barcelona-2025/DSCF0325.jpeg",
+    "alt": "DSCF0325",
+    "trip": "barcelona-2025",
+    "filename": "DSCF0325.jpeg"
+  },
+  {
+    "id": "barcelona-2025-dscf0618",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/barcelona-2025/DSCF0618.jpeg",
+    "alt": "DSCF0618",
+    "trip": "barcelona-2025",
+    "filename": "DSCF0618.jpeg"
+  },
+  {
+    "id": "barcelona-2025-dscf0668",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/barcelona-2025/DSCF0668.jpeg",
+    "alt": "DSCF0668",
+    "trip": "barcelona-2025",
+    "filename": "DSCF0668.jpeg"
+  },
+  {
+    "id": "barcelona-2025-dscf0672",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/barcelona-2025/DSCF0672.jpeg",
+    "alt": "DSCF0672",
+    "trip": "barcelona-2025",
+    "filename": "DSCF0672.jpeg"
+  },
+  {
+    "id": "barcelona-2025-dscf0706",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/barcelona-2025/DSCF0706.jpeg",
+    "alt": "DSCF0706",
+    "trip": "barcelona-2025",
+    "filename": "DSCF0706.jpeg"
+  },
+  {
+    "id": "barcelona-2025-dscf0714",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/barcelona-2025/DSCF0714.jpeg",
+    "alt": "DSCF0714",
+    "trip": "barcelona-2025",
+    "filename": "DSCF0714.jpeg"
+  },
+  {
+    "id": "barcelona-2025-dscf0975",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/barcelona-2025/DSCF0975.jpeg",
+    "alt": "DSCF0975",
+    "trip": "barcelona-2025",
+    "filename": "DSCF0975.jpeg"
+  },
+  {
+    "id": "barcelona-2025-dscf1120",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/barcelona-2025/DSCF1120.jpeg",
+    "alt": "DSCF1120",
+    "trip": "barcelona-2025",
+    "filename": "DSCF1120.jpeg"
   },
   {
     "id": "random-dscf3315-1-edited",
