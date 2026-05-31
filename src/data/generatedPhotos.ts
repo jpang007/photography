@@ -1,5 +1,5 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-05-31T22:31:23.869Z
+// Generated on: 2026-05-31T23:52:23.966Z
 // Run 'node scripts/generate-photos.js' to regenerate
 
 export const S3_BASE_URL = 'https://jeremyjpangphotos.s3.us-east-2.amazonaws.com';
@@ -77,7 +77,7 @@ export const trips = [
     "name": "Moments",
     "year": "",
     "description": "Random captures and everyday moments",
-    "count": 14,
+    "count": 22,
     "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/DSCF0119.jpeg"
   },
   {
@@ -660,6 +660,62 @@ export const photos = [
     "alt": "DSCF3749",
     "trip": "cdmx-2026",
     "filename": "DSCF3749.jpeg"
+  },
+  {
+    "id": "random-dscf3855",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/DSCF3855.jpeg",
+    "alt": "DSCF3855",
+    "trip": "random",
+    "filename": "DSCF3855.jpeg"
+  },
+  {
+    "id": "random-dscf3868",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/DSCF3868.jpeg",
+    "alt": "DSCF3868",
+    "trip": "random",
+    "filename": "DSCF3868.jpeg"
+  },
+  {
+    "id": "random-dscf3872",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/DSCF3872.jpeg",
+    "alt": "DSCF3872",
+    "trip": "random",
+    "filename": "DSCF3872.jpeg"
+  },
+  {
+    "id": "random-dscf3876",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/DSCF3876.jpeg",
+    "alt": "DSCF3876",
+    "trip": "random",
+    "filename": "DSCF3876.jpeg"
+  },
+  {
+    "id": "random-dscf3887",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/DSCF3887.jpeg",
+    "alt": "DSCF3887",
+    "trip": "random",
+    "filename": "DSCF3887.jpeg"
+  },
+  {
+    "id": "random-dscf3937",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/DSCF3937.jpeg",
+    "alt": "DSCF3937",
+    "trip": "random",
+    "filename": "DSCF3937.jpeg"
+  },
+  {
+    "id": "random-dscf3947",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/DSCF3947.jpeg",
+    "alt": "DSCF3947",
+    "trip": "random",
+    "filename": "DSCF3947.jpeg"
+  },
+  {
+    "id": "random-dscf3949-edited4",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/DSCF3949%20Edited4.jpeg",
+    "alt": "DSCF3949 Edited4",
+    "trip": "random",
+    "filename": "DSCF3949 Edited4.jpeg"
   },
   {
     "id": "newzealand-2024-dscf4344-birds-edit-v2-natural-fullres",
