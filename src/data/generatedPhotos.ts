@@ -1,5 +1,5 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-05-31T23:52:23.966Z
+// Generated on: 2026-07-05T14:48:28.280Z
 // Run 'node scripts/generate-photos.js' to regenerate
 
 export const S3_BASE_URL = 'https://jeremyjpangphotos.s3.us-east-2.amazonaws.com';
@@ -79,6 +79,24 @@ export const trips = [
     "description": "Random captures and everyday moments",
     "count": 22,
     "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/random/DSCF0119.jpeg"
+  },
+  {
+    "id": "world-cup-2026",
+    "slug": "world-cup-2026",
+    "name": "World Cup",
+    "year": "2026",
+    "description": "World Cup 2026",
+    "count": 8,
+    "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/world-cup-2026/DSCF0154.jpeg"
+  },
+  {
+    "id": "seattle-2026",
+    "slug": "seattle-2026",
+    "name": "Seattle",
+    "year": "2026",
+    "description": "Seattle 2026",
+    "count": 13,
+    "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/seattle-2026/DSCF0025.jpeg"
   },
   {
     "id": "cdmx-2026",
@@ -487,11 +505,158 @@ export const photos = [
     "filename": "dandelions_spring_film_edit_v1.jpeg"
   },
   {
+    "id": "seattle-2026-dscf0025",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/seattle-2026/DSCF0025.jpeg",
+    "alt": "DSCF0025",
+    "trip": "seattle-2026",
+    "filename": "DSCF0025.jpeg"
+  },
+  {
+    "id": "seattle-2026-dscf0056",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/seattle-2026/DSCF0056.jpeg",
+    "alt": "DSCF0056",
+    "trip": "seattle-2026",
+    "filename": "DSCF0056.jpeg"
+  },
+  {
+    "id": "seattle-2026-dscf0060",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/seattle-2026/DSCF0060.jpeg",
+    "alt": "DSCF0060",
+    "trip": "seattle-2026",
+    "filename": "DSCF0060.jpeg"
+  },
+  {
+    "id": "seattle-2026-dscf0070",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/seattle-2026/DSCF0070.jpeg",
+    "alt": "DSCF0070",
+    "trip": "seattle-2026",
+    "filename": "DSCF0070.jpeg"
+  },
+  {
+    "id": "seattle-2026-dscf0080",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/seattle-2026/DSCF0080.jpeg",
+    "alt": "DSCF0080",
+    "trip": "seattle-2026",
+    "filename": "DSCF0080.jpeg"
+  },
+  {
+    "id": "seattle-2026-dscf0108",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/seattle-2026/DSCF0108.jpeg",
+    "alt": "DSCF0108",
+    "trip": "seattle-2026",
+    "filename": "DSCF0108.jpeg"
+  },
+  {
+    "id": "seattle-2026-dscf0112",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/seattle-2026/DSCF0112.jpeg",
+    "alt": "DSCF0112",
+    "trip": "seattle-2026",
+    "filename": "DSCF0112.jpeg"
+  },
+  {
+    "id": "world-cup-2026-dscf0154",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/world-cup-2026/DSCF0154.jpeg",
+    "alt": "DSCF0154",
+    "trip": "world-cup-2026",
+    "filename": "DSCF0154.jpeg"
+  },
+  {
+    "id": "world-cup-2026-dscf0204",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/world-cup-2026/DSCF0204.jpeg",
+    "alt": "DSCF0204",
+    "trip": "world-cup-2026",
+    "filename": "DSCF0204.jpeg"
+  },
+  {
+    "id": "world-cup-2026-dscf0219",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/world-cup-2026/DSCF0219.jpeg",
+    "alt": "DSCF0219",
+    "trip": "world-cup-2026",
+    "filename": "DSCF0219.jpeg"
+  },
+  {
+    "id": "world-cup-2026-dscf0222",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/world-cup-2026/DSCF0222.jpeg",
+    "alt": "DSCF0222",
+    "trip": "world-cup-2026",
+    "filename": "DSCF0222.jpeg"
+  },
+  {
+    "id": "world-cup-2026-dscf0251",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/world-cup-2026/DSCF0251.jpeg",
+    "alt": "DSCF0251",
+    "trip": "world-cup-2026",
+    "filename": "DSCF0251.jpeg"
+  },
+  {
+    "id": "world-cup-2026-dscf0254",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/world-cup-2026/DSCF0254.jpeg",
+    "alt": "DSCF0254",
+    "trip": "world-cup-2026",
+    "filename": "DSCF0254.jpeg"
+  },
+  {
+    "id": "world-cup-2026-dscf0289",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/world-cup-2026/DSCF0289.jpeg",
+    "alt": "DSCF0289",
+    "trip": "world-cup-2026",
+    "filename": "DSCF0289.jpeg"
+  },
+  {
+    "id": "world-cup-2026-dscf0310",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/world-cup-2026/DSCF0310.jpeg",
+    "alt": "DSCF0310",
+    "trip": "world-cup-2026",
+    "filename": "DSCF0310.jpeg"
+  },
+  {
     "id": "barcelona-2025-dscf0325",
     "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/barcelona-2025/DSCF0325.jpeg",
     "alt": "DSCF0325",
     "trip": "barcelona-2025",
     "filename": "DSCF0325.jpeg"
+  },
+  {
+    "id": "seattle-2026-dscf0371",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/seattle-2026/DSCF0371.jpeg",
+    "alt": "DSCF0371",
+    "trip": "seattle-2026",
+    "filename": "DSCF0371.jpeg"
+  },
+  {
+    "id": "seattle-2026-dscf0403",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/seattle-2026/DSCF0403.jpeg",
+    "alt": "DSCF0403",
+    "trip": "seattle-2026",
+    "filename": "DSCF0403.jpeg"
+  },
+  {
+    "id": "seattle-2026-dscf0417",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/seattle-2026/DSCF0417.jpeg",
+    "alt": "DSCF0417",
+    "trip": "seattle-2026",
+    "filename": "DSCF0417.jpeg"
+  },
+  {
+    "id": "seattle-2026-dscf0439",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/seattle-2026/DSCF0439.jpeg",
+    "alt": "DSCF0439",
+    "trip": "seattle-2026",
+    "filename": "DSCF0439.jpeg"
+  },
+  {
+    "id": "seattle-2026-dscf0462",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/seattle-2026/DSCF0462.jpeg",
+    "alt": "DSCF0462",
+    "trip": "seattle-2026",
+    "filename": "DSCF0462.jpeg"
+  },
+  {
+    "id": "seattle-2026-dscf0504",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/seattle-2026/DSCF0504.jpeg",
+    "alt": "DSCF0504",
+    "trip": "seattle-2026",
+    "filename": "DSCF0504.jpeg"
   },
   {
     "id": "barcelona-2025-dscf0618",
