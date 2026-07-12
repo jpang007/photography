@@ -1,5 +1,5 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-07-05T14:48:28.280Z
+// Generated on: 2026-07-12T16:29:32.656Z
 // Run 'node scripts/generate-photos.js' to regenerate
 
 export const S3_BASE_URL = 'https://jeremyjpangphotos.s3.us-east-2.amazonaws.com';
@@ -106,6 +106,15 @@ export const trips = [
     "description": "Cdmx 2026",
     "count": 14,
     "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/cdmx-2026/DSCF3407.jpeg"
+  },
+  {
+    "id": "boston-2026",
+    "slug": "boston-2026",
+    "name": "Boston",
+    "year": "2026",
+    "description": "Boston 2026",
+    "count": 1,
+    "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/boston-2026/F86D9479-5A90-4083-A423-611C720660CC.jpeg"
   },
   {
     "id": "california-2025",
@@ -951,6 +960,13 @@ export const photos = [
     "alt": "DSCF6969",
     "trip": "italy-2025",
     "filename": "DSCF6969.jpeg"
+  },
+  {
+    "id": "boston-2026-f86d9479-5a90-4083-a423-611c720660cc",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/boston-2026/F86D9479-5A90-4083-A423-611C720660CC.jpeg",
+    "alt": "F86D9479 5A90 4083 A423 611C720660CC",
+    "trip": "boston-2026",
+    "filename": "F86D9479-5A90-4083-A423-611C720660CC.jpeg"
   },
   {
     "id": "italy-2025-fb36560f-036e-4e0f-a89f-d30fa10efd5f-58951-000014328630aab2",
