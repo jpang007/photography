@@ -44,19 +44,13 @@ function loadPortfolioLayout() {
   };
 }
 
-function compareByOrder(order, getKey) {
-  const rank = new Map(order.map((key, index) => [key, index]));
+function compareByUploadDateThenFilename(a, b) {
+  const aUploadedAt = a.uploadedAt ? new Date(a.uploadedAt).getTime() : 0;
+  const bUploadedAt = b.uploadedAt ? new Date(b.uploadedAt).getTime() : 0;
 
-  return (a, b) => {
-    const aRank = rank.get(getKey(a));
-    const bRank = rank.get(getKey(b));
+  if (aUploadedAt !== bUploadedAt) return bUploadedAt - aUploadedAt;
 
-    if (aRank !== undefined && bRank !== undefined) return aRank - bRank;
-    if (aRank !== undefined) return -1;
-    if (bRank !== undefined) return 1;
-
-    return a.filename.localeCompare(b.filename, undefined, { numeric: true, sensitivity: 'base' });
-  };
+  return a.filename.localeCompare(b.filename, undefined, { numeric: true, sensitivity: 'base' });
 }
 
 // Optional: Load custom trip metadata from trips-config.json
@@ -162,13 +156,14 @@ async function generatePhotosData() {
       alt: filename.replace(/\.[^.]+$/, '').replace(/[-_]/g, ' '),
       trip: tripSlug,
       filename: filename,
+      uploadedAt: obj.LastModified?.toISOString?.() || '',
       ...dimensions,
     });
   });
 
-  // Sort photos within each trip by curated sequence, falling back to filename.
+  // Sort photos within each trip by most recently uploaded first.
   Object.keys(tripPhotos).forEach((slug) => {
-    tripPhotos[slug].sort(compareByOrder(portfolioLayout.photoOrder?.[slug] || [], (photo) => photo.filename));
+    tripPhotos[slug].sort(compareByUploadDateThenFilename);
   });
 
   // Generate trips array with auto-detection and custom overrides
@@ -186,13 +181,12 @@ async function generatePhotosData() {
       coverImage: photos[0]?.src || '',
     };
   }).sort((a, b) => {
-    const order = portfolioLayout.tripOrder || [];
-    const aRank = order.indexOf(a.slug);
-    const bRank = order.indexOf(b.slug);
+    const aLatestPhoto = tripPhotos[a.slug]?.[0];
+    const bLatestPhoto = tripPhotos[b.slug]?.[0];
+    const aUploadedAt = aLatestPhoto?.uploadedAt ? new Date(aLatestPhoto.uploadedAt).getTime() : 0;
+    const bUploadedAt = bLatestPhoto?.uploadedAt ? new Date(bLatestPhoto.uploadedAt).getTime() : 0;
 
-    if (aRank !== -1 && bRank !== -1) return aRank - bRank;
-    if (aRank !== -1) return -1;
-    if (bRank !== -1) return 1;
+    if (aUploadedAt !== bUploadedAt) return bUploadedAt - aUploadedAt;
 
     return `${b.year}${b.name}`.localeCompare(`${a.year}${a.name}`);
   });
@@ -202,10 +196,10 @@ async function generatePhotosData() {
     .filter((obj) => isImageFile(obj.Key))
     .map((obj) => getS3ObjectUrl(obj.Key));
 
-  // Generate all photos array with an optional cross-trip editorial sequence.
+  // Generate all photos array by most recently uploaded first.
   const allPhotos = Object.values(tripPhotos)
     .flat()
-    .sort(compareByOrder(portfolioLayout.allPhotoOrder || [], (photo) => getPhotoKey(photo.trip, photo.filename)));
+    .sort(compareByUploadDateThenFilename);
 
   console.log(`Found ${allPhotos.length} photos across ${trips.length} trips`);
   console.log(`Found ${heroImages.length} hero images\n`);
