@@ -1,5 +1,5 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-07-12T16:43:26.917Z
+// Generated on: 2026-07-13T03:12:32.410Z
 // Run 'node scripts/generate-photos.js' to regenerate
 
 export const S3_BASE_URL = 'https://jeremyjpangphotos.s3.us-east-2.amazonaws.com';
@@ -18,6 +18,15 @@ export const heroImages = [
 
 export const trips = [
   {
+    "id": "world-cup-2026",
+    "slug": "world-cup-2026",
+    "name": "World Cup",
+    "year": "2026",
+    "description": "World Cup 2026",
+    "count": 13,
+    "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/world-cup-2026/DSCF0582.jpeg"
+  },
+  {
     "id": "boston-2026",
     "slug": "boston-2026",
     "name": "Boston",
@@ -25,15 +34,6 @@ export const trips = [
     "description": "Boston 2026",
     "count": 1,
     "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/boston-2026/F86D9479-5A90-4083-A423-611C720660CC.jpeg"
-  },
-  {
-    "id": "world-cup-2026",
-    "slug": "world-cup-2026",
-    "name": "World Cup",
-    "year": "2026",
-    "description": "World Cup 2026",
-    "count": 8,
-    "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/world-cup-2026/DSCF0251.jpeg"
   },
   {
     "id": "seattle-2026",
@@ -137,6 +137,46 @@ export const trips = [
 ];
 
 export const photos = [
+  {
+    "id": "world-cup-2026-dscf0582",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/world-cup-2026/DSCF0582.jpeg",
+    "alt": "DSCF0582",
+    "trip": "world-cup-2026",
+    "filename": "DSCF0582.jpeg",
+    "uploadedAt": "2026-07-13T03:12:10.000Z"
+  },
+  {
+    "id": "world-cup-2026-dscf0585",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/world-cup-2026/DSCF0585.jpeg",
+    "alt": "DSCF0585",
+    "trip": "world-cup-2026",
+    "filename": "DSCF0585.jpeg",
+    "uploadedAt": "2026-07-13T03:12:10.000Z"
+  },
+  {
+    "id": "world-cup-2026-dscf0588",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/world-cup-2026/DSCF0588.jpeg",
+    "alt": "DSCF0588",
+    "trip": "world-cup-2026",
+    "filename": "DSCF0588.jpeg",
+    "uploadedAt": "2026-07-13T03:12:10.000Z"
+  },
+  {
+    "id": "world-cup-2026-dscf0594",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/world-cup-2026/DSCF0594.jpeg",
+    "alt": "DSCF0594",
+    "trip": "world-cup-2026",
+    "filename": "DSCF0594.jpeg",
+    "uploadedAt": "2026-07-13T03:12:09.000Z"
+  },
+  {
+    "id": "world-cup-2026-dscf0612",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/world-cup-2026/DSCF0612.jpeg",
+    "alt": "DSCF0612",
+    "trip": "world-cup-2026",
+    "filename": "DSCF0612.jpeg",
+    "uploadedAt": "2026-07-13T03:12:09.000Z"
+  },
   {
     "id": "boston-2026-f86d9479-5a90-4083-a423-611c720660cc",
     "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/boston-2026/F86D9479-5A90-4083-A423-611C720660CC.jpeg",
