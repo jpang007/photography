@@ -1,5 +1,5 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-07-13T03:12:32.410Z
+// Generated on: 2026-08-05T03:46:12.708Z
 // Run 'node scripts/generate-photos.js' to regenerate
 
 export const S3_BASE_URL = 'https://jeremyjpangphotos.s3.us-east-2.amazonaws.com';
@@ -18,6 +18,15 @@ export const heroImages = [
 
 export const trips = [
   {
+    "id": "seattle-2026",
+    "slug": "seattle-2026",
+    "name": "Seattle",
+    "year": "2026",
+    "description": "Seattle 2026",
+    "count": 16,
+    "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/seattle-2026/DSCF0867.jpeg"
+  },
+  {
     "id": "world-cup-2026",
     "slug": "world-cup-2026",
     "name": "World Cup",
@@ -34,15 +43,6 @@ export const trips = [
     "description": "Boston 2026",
     "count": 1,
     "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/boston-2026/F86D9479-5A90-4083-A423-611C720660CC.jpeg"
-  },
-  {
-    "id": "seattle-2026",
-    "slug": "seattle-2026",
-    "name": "Seattle",
-    "year": "2026",
-    "description": "Seattle 2026",
-    "count": 13,
-    "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/seattle-2026/DSCF0462.jpeg"
   },
   {
     "id": "random",
@@ -137,6 +137,30 @@ export const trips = [
 ];
 
 export const photos = [
+  {
+    "id": "seattle-2026-dscf0867",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/seattle-2026/DSCF0867.jpeg",
+    "alt": "DSCF0867",
+    "trip": "seattle-2026",
+    "filename": "DSCF0867.jpeg",
+    "uploadedAt": "2026-08-05T03:46:01.000Z"
+  },
+  {
+    "id": "seattle-2026-dscf0918",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/seattle-2026/DSCF0918.jpeg",
+    "alt": "DSCF0918",
+    "trip": "seattle-2026",
+    "filename": "DSCF0918.jpeg",
+    "uploadedAt": "2026-08-05T03:46:01.000Z"
+  },
+  {
+    "id": "seattle-2026-dscf0932",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/seattle-2026/DSCF0932.jpeg",
+    "alt": "DSCF0932",
+    "trip": "seattle-2026",
+    "filename": "DSCF0932.jpeg",
+    "uploadedAt": "2026-08-05T03:46:01.000Z"
+  },
   {
     "id": "world-cup-2026-dscf0582",
     "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/world-cup-2026/DSCF0582.jpeg",
