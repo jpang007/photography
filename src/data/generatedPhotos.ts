@@ -1,5 +1,5 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-08-05T03:46:12.708Z
+// Generated on: 2026-09-14T22:51:50.160Z
 // Run 'node scripts/generate-photos.js' to regenerate
 
 export const S3_BASE_URL = 'https://jeremyjpangphotos.s3.us-east-2.amazonaws.com';
@@ -17,6 +17,15 @@ export const heroImages = [
 ];
 
 export const trips = [
+  {
+    "id": "paris-2026",
+    "slug": "paris-2026",
+    "name": "Paris",
+    "year": "2026",
+    "description": "Paris 2026",
+    "count": 8,
+    "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/paris-2026/DSCF1055.jpeg"
+  },
   {
     "id": "seattle-2026",
     "slug": "seattle-2026",
@@ -137,6 +146,70 @@ export const trips = [
 ];
 
 export const photos = [
+  {
+    "id": "paris-2026-dscf1055",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/paris-2026/DSCF1055.jpeg",
+    "alt": "DSCF1055",
+    "trip": "paris-2026",
+    "filename": "DSCF1055.jpeg",
+    "uploadedAt": "2026-09-14T22:50:01.000Z"
+  },
+  {
+    "id": "paris-2026-dscf0993",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/paris-2026/DSCF0993.jpeg",
+    "alt": "DSCF0993",
+    "trip": "paris-2026",
+    "filename": "DSCF0993.jpeg",
+    "uploadedAt": "2026-09-14T22:50:00.000Z"
+  },
+  {
+    "id": "paris-2026-dscf0996",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/paris-2026/DSCF0996.jpeg",
+    "alt": "DSCF0996",
+    "trip": "paris-2026",
+    "filename": "DSCF0996.jpeg",
+    "uploadedAt": "2026-09-14T22:50:00.000Z"
+  },
+  {
+    "id": "paris-2026-dscf0997",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/paris-2026/DSCF0997.jpeg",
+    "alt": "DSCF0997",
+    "trip": "paris-2026",
+    "filename": "DSCF0997.jpeg",
+    "uploadedAt": "2026-09-14T22:50:00.000Z"
+  },
+  {
+    "id": "paris-2026-dscf1050",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/paris-2026/DSCF1050.jpeg",
+    "alt": "DSCF1050",
+    "trip": "paris-2026",
+    "filename": "DSCF1050.jpeg",
+    "uploadedAt": "2026-09-14T22:50:00.000Z"
+  },
+  {
+    "id": "paris-2026-dscf0981",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/paris-2026/DSCF0981.jpeg",
+    "alt": "DSCF0981",
+    "trip": "paris-2026",
+    "filename": "DSCF0981.jpeg",
+    "uploadedAt": "2026-09-14T22:49:59.000Z"
+  },
+  {
+    "id": "paris-2026-dscf0984",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/paris-2026/DSCF0984.jpeg",
+    "alt": "DSCF0984",
+    "trip": "paris-2026",
+    "filename": "DSCF0984.jpeg",
+    "uploadedAt": "2026-09-14T22:49:59.000Z"
+  },
+  {
+    "id": "paris-2026-dscf0986",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/paris-2026/DSCF0986.jpeg",
+    "alt": "DSCF0986",
+    "trip": "paris-2026",
+    "filename": "DSCF0986.jpeg",
+    "uploadedAt": "2026-09-14T22:49:59.000Z"
+  },
   {
     "id": "seattle-2026-dscf0867",
     "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/seattle-2026/DSCF0867.jpeg",
