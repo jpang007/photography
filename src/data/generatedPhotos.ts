@@ -1,5 +1,5 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-09-14T22:51:50.160Z
+// Generated on: 2026-09-23T02:01:11.000Z
 // Run 'node scripts/generate-photos.js' to regenerate
 
 export const S3_BASE_URL = 'https://jeremyjpangphotos.s3.us-east-2.amazonaws.com';
@@ -18,13 +18,22 @@ export const heroImages = [
 
 export const trips = [
   {
+    "id": "china-2026",
+    "slug": "china-2026",
+    "name": "China",
+    "year": "2026",
+    "description": "China 2026",
+    "count": 16,
+    "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2026/DSCF1790.jpeg"
+  },
+  {
     "id": "paris-2026",
     "slug": "paris-2026",
     "name": "Paris",
     "year": "2026",
     "description": "Paris 2026",
-    "count": 8,
-    "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/paris-2026/DSCF1055.jpeg"
+    "count": 12,
+    "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/paris-2026/DSCF1124.jpeg"
   },
   {
     "id": "seattle-2026",
@@ -146,6 +155,166 @@ export const trips = [
 ];
 
 export const photos = [
+  {
+    "id": "china-2026-dscf1790",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2026/DSCF1790.jpeg",
+    "alt": "DSCF1790",
+    "trip": "china-2026",
+    "filename": "DSCF1790.jpeg",
+    "uploadedAt": "2026-09-23T01:59:48.000Z"
+  },
+  {
+    "id": "china-2026-dscf1645",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2026/DSCF1645.jpeg",
+    "alt": "DSCF1645",
+    "trip": "china-2026",
+    "filename": "DSCF1645.jpeg",
+    "uploadedAt": "2026-09-23T01:59:47.000Z"
+  },
+  {
+    "id": "china-2026-dscf1675",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2026/DSCF1675.jpeg",
+    "alt": "DSCF1675",
+    "trip": "china-2026",
+    "filename": "DSCF1675.jpeg",
+    "uploadedAt": "2026-09-23T01:59:47.000Z"
+  },
+  {
+    "id": "china-2026-dscf1723",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2026/DSCF1723.jpeg",
+    "alt": "DSCF1723",
+    "trip": "china-2026",
+    "filename": "DSCF1723.jpeg",
+    "uploadedAt": "2026-09-23T01:59:47.000Z"
+  },
+  {
+    "id": "china-2026-dscf1729",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2026/DSCF1729.jpeg",
+    "alt": "DSCF1729",
+    "trip": "china-2026",
+    "filename": "DSCF1729.jpeg",
+    "uploadedAt": "2026-09-23T01:59:47.000Z"
+  },
+  {
+    "id": "china-2026-dscf1748",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2026/DSCF1748.jpeg",
+    "alt": "DSCF1748",
+    "trip": "china-2026",
+    "filename": "DSCF1748.jpeg",
+    "uploadedAt": "2026-09-23T01:59:47.000Z"
+  },
+  {
+    "id": "china-2026-dscf1591",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2026/DSCF1591.jpeg",
+    "alt": "DSCF1591",
+    "trip": "china-2026",
+    "filename": "DSCF1591.jpeg",
+    "uploadedAt": "2026-09-23T01:59:46.000Z"
+  },
+  {
+    "id": "china-2026-dscf1596",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2026/DSCF1596.jpeg",
+    "alt": "DSCF1596",
+    "trip": "china-2026",
+    "filename": "DSCF1596.jpeg",
+    "uploadedAt": "2026-09-23T01:59:46.000Z"
+  },
+  {
+    "id": "china-2026-dscf1614",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2026/DSCF1614.jpeg",
+    "alt": "DSCF1614",
+    "trip": "china-2026",
+    "filename": "DSCF1614.jpeg",
+    "uploadedAt": "2026-09-23T01:59:46.000Z"
+  },
+  {
+    "id": "china-2026-dscf1556",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2026/DSCF1556.jpeg",
+    "alt": "DSCF1556",
+    "trip": "china-2026",
+    "filename": "DSCF1556.jpeg",
+    "uploadedAt": "2026-09-23T01:59:45.000Z"
+  },
+  {
+    "id": "china-2026-dscf1566",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2026/DSCF1566.jpeg",
+    "alt": "DSCF1566",
+    "trip": "china-2026",
+    "filename": "DSCF1566.jpeg",
+    "uploadedAt": "2026-09-23T01:59:45.000Z"
+  },
+  {
+    "id": "china-2026-dscf1582",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2026/DSCF1582.jpeg",
+    "alt": "DSCF1582",
+    "trip": "china-2026",
+    "filename": "DSCF1582.jpeg",
+    "uploadedAt": "2026-09-23T01:59:45.000Z"
+  },
+  {
+    "id": "china-2026-dscf1484",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2026/DSCF1484.jpeg",
+    "alt": "DSCF1484",
+    "trip": "china-2026",
+    "filename": "DSCF1484.jpeg",
+    "uploadedAt": "2026-09-23T01:59:44.000Z"
+  },
+  {
+    "id": "china-2026-dscf1515",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2026/DSCF1515.jpeg",
+    "alt": "DSCF1515",
+    "trip": "china-2026",
+    "filename": "DSCF1515.jpeg",
+    "uploadedAt": "2026-09-23T01:59:44.000Z"
+  },
+  {
+    "id": "china-2026-dscf1524",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2026/DSCF1524.jpeg",
+    "alt": "DSCF1524",
+    "trip": "china-2026",
+    "filename": "DSCF1524.jpeg",
+    "uploadedAt": "2026-09-23T01:59:44.000Z"
+  },
+  {
+    "id": "china-2026-dscf1304",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/china-2026/DSCF1304.jpeg",
+    "alt": "DSCF1304",
+    "trip": "china-2026",
+    "filename": "DSCF1304.jpeg",
+    "uploadedAt": "2026-09-23T01:59:43.000Z"
+  },
+  {
+    "id": "paris-2026-dscf1124",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/paris-2026/DSCF1124.jpeg",
+    "alt": "DSCF1124",
+    "trip": "paris-2026",
+    "filename": "DSCF1124.jpeg",
+    "uploadedAt": "2026-09-15T04:52:38.000Z"
+  },
+  {
+    "id": "paris-2026-dscf1170",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/paris-2026/DSCF1170.jpeg",
+    "alt": "DSCF1170",
+    "trip": "paris-2026",
+    "filename": "DSCF1170.jpeg",
+    "uploadedAt": "2026-09-15T04:52:38.000Z"
+  },
+  {
+    "id": "paris-2026-dscf1069",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/paris-2026/DSCF1069.jpeg",
+    "alt": "DSCF1069",
+    "trip": "paris-2026",
+    "filename": "DSCF1069.jpeg",
+    "uploadedAt": "2026-09-15T04:52:37.000Z"
+  },
+  {
+    "id": "paris-2026-dscf1122",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/paris-2026/DSCF1122.jpeg",
+    "alt": "DSCF1122",
+    "trip": "paris-2026",
+    "filename": "DSCF1122.jpeg",
+    "uploadedAt": "2026-09-15T04:52:37.000Z"
+  },
   {
     "id": "paris-2026-dscf1055",
     "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/paris-2026/DSCF1055.jpeg",
