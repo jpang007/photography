@@ -16,9 +16,7 @@ export default function PortfolioPage() {
   // Set initial trip from URL
   useEffect(() => {
     const tripParam = searchParams.get('trip');
-    if (tripParam) {
-      setActiveTrip(tripParam);
-    }
+    setActiveTrip(tripParam);
   }, [searchParams]);
 
   // Filter photos by trip
@@ -62,7 +60,30 @@ export default function PortfolioPage() {
           onSelectTrip={handleSelectTrip}
         />
 
-        <GalleryGrid photos={filteredPhotos} />
+        {activeTrip ? (
+          <GalleryGrid key={activeTrip} photos={filteredPhotos} />
+        ) : (
+          <div className="space-y-16 md:space-y-20">
+            {trips.map((trip) => {
+              const albumPhotos = photos.filter((photo) => photo.trip === trip.slug);
+              if (albumPhotos.length === 0) return null;
+
+              return (
+                <section key={trip.slug} aria-labelledby={`album-${trip.slug}`}>
+                  <div className="mb-5 flex flex-wrap items-baseline justify-between gap-3 border-b border-neutral-200 pb-4">
+                    <h2 id={`album-${trip.slug}`} className="text-2xl md:text-3xl">
+                      {trip.name}{trip.year ? ` ${trip.year}` : ''}
+                    </h2>
+                    <span className="text-sm text-neutral-500">
+                      {albumPhotos.length} {albumPhotos.length === 1 ? 'photograph' : 'photographs'}
+                    </span>
+                  </div>
+                  <GalleryGrid photos={albumPhotos} />
+                </section>
+              );
+            })}
+          </div>
+        )}
       </div>
     </div>
   );
