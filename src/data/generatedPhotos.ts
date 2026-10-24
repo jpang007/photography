@@ -1,5 +1,5 @@
 // AUTO-GENERATED - DO NOT EDIT MANUALLY
-// Generated on: 2026-10-18T21:04:59.098Z
+// Generated on: 2026-10-24T20:33:24.986Z
 // Run 'node scripts/generate-photos.js' to regenerate
 
 export const S3_BASE_URL = 'https://jeremyjpangphotos.s3.us-east-2.amazonaws.com';
@@ -23,8 +23,8 @@ export const trips = [
     "name": "France",
     "year": "2026",
     "description": "France 2026",
-    "count": 36,
-    "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/france-2026/DSCF2305.jpg"
+    "count": 47,
+    "coverImage": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/france-2026/676AC211-EDBC-4F55-A060-A6A76C55C23C.jpg"
   },
   {
     "id": "china-2026",
@@ -164,6 +164,94 @@ export const trips = [
 ];
 
 export const photos = [
+  {
+    "id": "france-2026-676ac211-edbc-4f55-a060-a6a76c55c23c",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/france-2026/676AC211-EDBC-4F55-A060-A6A76C55C23C.jpg",
+    "alt": "676AC211 EDBC 4F55 A060 A6A76C55C23C",
+    "trip": "france-2026",
+    "filename": "676AC211-EDBC-4F55-A060-A6A76C55C23C.jpg",
+    "uploadedAt": "2026-10-24T20:33:09.000Z"
+  },
+  {
+    "id": "france-2026-ae253947-f8a3-4d07-91c1-8de23cdc8d98",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/france-2026/AE253947-F8A3-4D07-91C1-8DE23CDC8D98.jpg",
+    "alt": "AE253947 F8A3 4D07 91C1 8DE23CDC8D98",
+    "trip": "france-2026",
+    "filename": "AE253947-F8A3-4D07-91C1-8DE23CDC8D98.jpg",
+    "uploadedAt": "2026-10-24T20:33:09.000Z"
+  },
+  {
+    "id": "france-2026-b7ab4209-3499-445b-8042-0025409fc007-1-201-a",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/france-2026/B7AB4209-3499-445B-8042-0025409FC007_1_201_a.jpg",
+    "alt": "B7AB4209 3499 445B 8042 0025409FC007 1 201 a",
+    "trip": "france-2026",
+    "filename": "B7AB4209-3499-445B-8042-0025409FC007_1_201_a.jpg",
+    "uploadedAt": "2026-10-24T20:33:09.000Z"
+  },
+  {
+    "id": "france-2026-42e72c35-39ce-4ed8-8b89-71af5b004830-1-105-c",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/france-2026/42E72C35-39CE-4ED8-8B89-71AF5B004830_1_105_c.jpg",
+    "alt": "42E72C35 39CE 4ED8 8B89 71AF5B004830 1 105 c",
+    "trip": "france-2026",
+    "filename": "42E72C35-39CE-4ED8-8B89-71AF5B004830_1_105_c.jpg",
+    "uploadedAt": "2026-10-24T20:33:08.000Z"
+  },
+  {
+    "id": "france-2026-dscf2867",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/france-2026/DSCF2867.jpeg",
+    "alt": "DSCF2867",
+    "trip": "france-2026",
+    "filename": "DSCF2867.jpeg",
+    "uploadedAt": "2026-10-24T20:33:08.000Z"
+  },
+  {
+    "id": "france-2026-dscf2880",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/france-2026/DSCF2880.jpeg",
+    "alt": "DSCF2880",
+    "trip": "france-2026",
+    "filename": "DSCF2880.jpeg",
+    "uploadedAt": "2026-10-24T20:33:08.000Z"
+  },
+  {
+    "id": "france-2026-dscf2886",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/france-2026/DSCF2886.jpeg",
+    "alt": "DSCF2886",
+    "trip": "france-2026",
+    "filename": "DSCF2886.jpeg",
+    "uploadedAt": "2026-10-24T20:33:08.000Z"
+  },
+  {
+    "id": "france-2026-dscf2892",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/france-2026/DSCF2892.jpeg",
+    "alt": "DSCF2892",
+    "trip": "france-2026",
+    "filename": "DSCF2892.jpeg",
+    "uploadedAt": "2026-10-24T20:33:07.000Z"
+  },
+  {
+    "id": "france-2026-dscf2893",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/france-2026/DSCF2893.jpeg",
+    "alt": "DSCF2893",
+    "trip": "france-2026",
+    "filename": "DSCF2893.jpeg",
+    "uploadedAt": "2026-10-24T20:33:07.000Z"
+  },
+  {
+    "id": "france-2026-dscf2900",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/france-2026/DSCF2900.jpeg",
+    "alt": "DSCF2900",
+    "trip": "france-2026",
+    "filename": "DSCF2900.jpeg",
+    "uploadedAt": "2026-10-24T20:33:07.000Z"
+  },
+  {
+    "id": "france-2026-dscf2906",
+    "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/france-2026/DSCF2906.jpeg",
+    "alt": "DSCF2906",
+    "trip": "france-2026",
+    "filename": "DSCF2906.jpeg",
+    "uploadedAt": "2026-10-24T20:33:06.000Z"
+  },
   {
     "id": "france-2026-dscf2305",
     "src": "https://jeremyjpangphotos.s3.us-east-2.amazonaws.com/gallery/france-2026/DSCF2305.jpg",
